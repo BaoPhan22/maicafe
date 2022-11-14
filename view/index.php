@@ -1,4 +1,3 @@
-<h1>Github test nè</h1>
 <?php
 include 'header.php';
 if (isset($_GET['act']) && ($_GET['act'])) {
