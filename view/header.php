@@ -15,5 +15,6 @@
     <nav>
         <ul>
             <a href="index.php?act=about">Giới thiệu</a>
+            <a href="index.php?act=contact">Liên hệ</a>
         </ul>
     </nav>
