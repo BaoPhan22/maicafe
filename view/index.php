@@ -10,3 +10,5 @@ if (isset($_GET['act']) && ($_GET['act'])) {
     include 'body.php';
 }
 include 'footer.php';
+?>
+<h1>Test github cai nwa</h1>
