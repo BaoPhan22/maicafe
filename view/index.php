@@ -1,11 +1,11 @@
 <?php
 include 'header.php';
-if (isset($_GET['act']) && ($_GET['act'])) {
+if (isset($_GET['act']) && ($_GET['act']!='')) {
     switch ($_GET['act']) {
-        case ['about']:
+        case 'about':
             include 'about.php';
             break;
-        case ['contact']:
+        case 'contact':
             include 'contact.php';
             break;
     }
