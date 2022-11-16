@@ -14,8 +14,5 @@ if (isset($_GET['act']) && ($_GET['act']!='')) {
 }
 include 'footer.php';
 ?>
-<h1>Test pull</h1>
-<h2>Push</h2>
-<h2>Push2</h2>
-<h2>Push3</h2>
+
 

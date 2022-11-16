@@ -11,7 +11,7 @@
     <h1>Trang quản trị</h1>
     <nav>
         <ul>
-            <a href="index.php?act=qldanhmuc"><li>Danh mục</li></a>
+            <a href="index.php?act=adddm"><li>Danh mục</li></a>
             <a href="index.php?act=qlsanpham"><li>Sản phẩm</li></a>
             <a href="index.php?act=qlkhachhang"><li>Khách hàng</li></a>
             <a href="index.php?act=qlbinhluan"><li>Bình luận</li></a>

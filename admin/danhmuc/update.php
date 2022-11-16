@@ -1,19 +1,25 @@
-<h1>Thêm danh mục (loại hàng)</h1>
-<form action="index.php?act=adddm" method="post">
+<?php 
+    if (is_array($dm)) {
+        extract($dm);
+    }
+?>
+<h1>Sửa danh mục (loại hàng)</h1>
+<form action="index.php?act=updatedm" method="post">
     <div class="form-group">
         <label for="maLoai">Mã loại</label>
-        <input type="text" class="form-control" name="maloai" id="maLoai" placeholder="Mã loại" disabled>
+        <input type="text" class="form-control" name="maloai" id="maLoai" placeholder="Mã loại" disabled value="<?php if(isset($id)&&($id>0)) echo $id;?>">
     </div>
     <div class="form-group">
         <label for="tenLoai">Tên loại</label>
-        <input type="text" class="form-control" name="tenloai" id="tenLoai" placeholder="Tên loại">
+        <input type="text" class="form-control" name="tenloai" id="tenLoai" placeholder="Tên loại" value="<?php if(isset($id)&&($id>0)) echo $ten_danh_muc;?>">
     </div>
     <div class="form-group">
         <label for="STT">STT</label>
-        <input type="number" class="form-control" name="stt_loai" id='STT' placeholder="Tên loại" value="0">
+        <input type="number" class="form-control" name="stt_loai" id='STT' placeholder="Tên loại" value="<?php if(isset($id)&&($id>0)) echo $stt;?>">
     </div>
     <div class="button">
-        <input type="submit" name="themmoidanhmuc" class="btn btn-primary" value="Thêm mới">
+        <input type="hidden" name="id" value="<?php if(isset($id)&&($id>0)) echo $id;?>">
+        <input type="submit" name="capnhatdanhmuc" class="btn btn-primary" value="Cập nhật">
         <input type="reset" class="btn btn-secondary" value="Nhập lại">
         <a href="index.php?act=danhsachdanhmuc"><input class="btn btn-secondary" value="Danh sách"></a>
     </div>
