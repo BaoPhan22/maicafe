@@ -1,9 +1,10 @@
 <?php
+include '../model/pdo.php';
 include 'header.php';
 if (isset($_GET['act']) && ($_GET['act'] != '')) {
     switch ($_GET['act']) {
         case 'qldanhmuc':
-            echo '<h1>Quản lí danh mục</h1>';
+            include 'danhmuc/add.php';
             break;
         case 'qlsanpham':
             echo '<h1>Quản lí sản phẩm</h1>';
