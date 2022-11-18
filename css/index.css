@@ -1,0 +1,362 @@
+    @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap');
+
+    body {
+        margin: 0;
+        font-family: 'Open Sans', 'sans-serif';
+    }
+
+    /* chia layout */
+    .row {
+        float: left;
+        width: 100%;
+    }
+
+    .top {
+        min-height: 85px;
+        background-color: rgb(31, 27, 27);
+    }
+
+    .content {
+        background-color: white;
+        min-height: 700px;
+    }
+
+    .recentnew {
+        background-color: rgb(228, 227, 227);
+        min-height: 200px;
+    }
+
+    .footer {
+        background-color: rgb(71, 71, 71);
+        min-height: 200px;
+    }
+
+    .boxcenter {
+        width: 100%;
+        padding-top:0px;
+        margin-top: 5px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .boxcenter a img {
+        width:100px;
+        border-radius: 40%;
+        padding-left: 10px;
+    }
+    #menu{
+        list-style: none;
+        display: flex;
+        margin-left:340px ;
+        margin-right: 200px;
+        padding-top: 40px;
+    }
+    #menu .item{
+        margin: 0 25px;
+        padding:10px 5px;
+    }
+    #menu .item a{
+        color:#626A67;
+        text-decoration: none;
+        font-weight: 900;
+    }
+    #menu .item:hover{
+        background-color:#efefef;
+        color:white;
+        border-radius: 10px;
+    }
+    #action{
+        display: flex;
+        margin-right: 100px;
+        padding-top: 40px;
+    }
+    #action .item{
+        margin: 0 25px;
+        padding:10px 5px;
+    }
+    #action .item a{
+        color:#626A67;
+        text-decoration: none;
+        font-weight: 900;
+    }
+    #action .item:hover{
+        background-color:#efefef;
+        color:white;
+        border-radius: 10px;
+    }
+    #banner{
+        width: 82%;
+        background-image: url(/img/banner_web_1920x450-0410__1__6f2257102807417e9c13bec30010fb06.webp);
+        height:520px;
+        margin-top: 25px;
+        display: flex;
+        padding: 0 133px;
+        position: relative;
+    }
+    #banner .box-left{
+        width: 70%;
+    }
+    #banner box-right{width: 30%}
+    #banner .box-left h2{
+        font-size: 48px;
+        margin-top: 75px;
+        color: white;   
+        font-weight: 900;
+        background-color:rgba(0, 0, 0, 0.232);
+        border-radius: 20px;
+        padding:10px 10px;
+    }
+    #banner .box-left p{
+        color: white;
+        font-weight: 900;
+        padding: 5px 10px;
+        border-radius: 30px;
+        background-color:rgba(0, 0, 0, 0.232);
+        border-radius: 20px;
+        padding:10px 10px;
+    }
+    #banner .box-left button{
+        width: 191px;
+        height: 40px;
+        margin-top: 41px;
+        background-color: #d8d8d8;
+        border: 4px solid darkgrey;
+        outline: none;
+        color:grey;
+        font-weight: bold;
+        border-radius: 20px;
+        transition: 0.4s;
+    }
+    #banner .box-left button:hover{
+        background-color: #858585;
+        color:white;
+        transition: 0.8s;
+    }
+
+
+    /* Thiet lap gach chan menu khi hover */
+    #main-menu li a::before {
+        content: "";
+        height: 3px;
+        width: 100%;
+        background-color: #f00;
+        position: absolute;
+        bottom: 0px;
+        display: none;
+        left: 0px;
+        transition: 0.25s cubic-bezier(0.165, 0.84, 0.44, 1);
+    }
+
+    #main-menu li a {
+        position: relative;
+    }
+
+    #main-menu li:hover a::before {
+        display: block;
+    }
+
+    /* sanphamhot */
+    #wrapper {
+        max-width: 85%;
+        margin: 0 auto;
+    }
+
+    #wrapper .headline h3 {
+        font-size: 30px;
+        color: #858585;
+        padding: 10px 20px;
+        text-transform: uppercase;
+        display: inline-block;
+        font-weight: 900;
+    }
+
+    .headline {
+        text-align: center;
+        margin: 40px 0;
+    }
+
+    ul.product {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        list-style: none;
+    }
+
+    ul.product li {
+        flex-basis: 25%;
+        padding-left: 15px;
+        padding-right: 15px;
+        box-sizing: border-box;
+        margin-bottom: 20px;
+    }
+
+    ul.product li img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 10px;
+    }
+
+    ul.product li:hover img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 10px;
+        filter: brightness(80%);
+    }
+
+    .product-info a.product-cat {
+        text-decoration: none;
+        padding: 100px 0;
+        color: #2d4e76;
+    }
+
+    .product-info .product-price {
+        color: rgb(177, 2, 2);
+        text-align: right;
+        font-weight: 600;
+        padding: 10px 0;
+    }
+
+    .product-item a.buy-now {
+        text-transform: uppercase;
+        text-decoration: none;
+        text-align: center;
+        display: block;
+        background-color: rgb(162, 72, 72);
+        color: white;
+        padding: 10px 0;
+        position: absolute;
+        width: 100%;
+        bottom: -42px;
+        transition: 0.25s ease-in-out;
+        opacity: 0.85;
+    }
+
+    .product-item a.buy-now:hover {
+        text-transform: uppercase;
+        text-decoration: none;
+        text-align: center;
+        display: block;
+        background-color: rgb(255, 0, 0);
+        color: white;
+        padding: 10px 0;
+        position: absolute;
+        width: 100%;
+        bottom: -42px;
+        transition: 0.25s ease-in-out;
+        opacity: 0.85;
+    }
+
+    .product-item {
+        position: relative;
+        overflow: hidden;
+    }
+
+    ul.product li:hover a.buy-now {
+        bottom: 0px;
+    }
+
+    /* content-shop */
+    #content-shopnew {
+        max-width: 70%;
+        margin: 0 auto;
+        background-color: #dddddd;
+        border-radius: 40px;
+    }
+
+    #content-shop {
+        max-width: 40%;
+        margin: 0px auto;
+        padding: 30px 0;
+    }
+
+    .content-shop-img .content-img img {
+        width: 100%;
+        border-radius: 20px;
+        padding-top: 30px;
+
+    }
+
+    .content-shop-img .content-img:hover img {
+        width: 100%;
+        border-radius: 20px;
+        padding-top: 30px;
+        opacity: 0.85;
+    }
+
+    .content-shop-title {
+        text-align: center;
+    }
+
+    .content-shop-title a {
+        display: block;
+        text-decoration: none;
+        text-align: center;
+        padding: 12px 0;
+    }
+
+    .content-shop-title .shop-title1 {
+        font-size: 24px;
+        text-transform: uppercase;
+        color: #505050;
+        font-weight: 900;
+    }
+
+    .content-shop-title .shop-title2 {
+        text-transform: inherit;
+        color: rgb(87, 87, 87);
+        font-style: italic
+    }
+
+    .content-shop-title .slogan-shop {
+        max-width: 50%;
+        margin: 0 auto;
+        background-color: rgb(211, 211, 211);
+        border: 2px solid black;
+    }
+
+    .content-shop-title .slogan-shop a {
+        color: black;
+        font-size: 20px;
+        font-weight: 600;
+    }
+
+    .content-shop-title .slogan-shop:hover {
+        filter: brightness(70%);
+        transition: 0.25s ease-in-out;
+    }
+    #wrapper .button-xemchitiet{
+        width: 10%;
+        margin: auto;
+        text-align: center;
+        background-color: rgb(211, 211, 211);
+        border: 2px solid black;
+        padding: 10px 10px;
+        border-radius: 7px;
+    }
+    #wrapper .button-xemchitiet a{
+        text-decoration: none;
+        color:black;
+        font-weight: 600;
+    }
+    #wrapper .button-xemchitiet:hover{
+        background-color:rgb(180, 179, 179) ;
+    }
+                                                        /* Footer */
+#recentnew-all{
+    display: flex;
+    width: 90%;
+    margin: 0 auto;
+}
+.recentnew-once{
+    width: 25%;
+    padding: 10px 20px;
+}
+.recentnew-once h4{
+    text-align: center;
+    font-weight: 900;
+}
+.recentnew-once p{
+    font-size: 13px;
+    padding:0 5px
+}
