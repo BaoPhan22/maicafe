@@ -1,0 +1,243 @@
+@import url('https://fonts.gooleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;1,200;1,400;1,500&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    cursor: pointer;
+}
+#wrapper {
+    /* Kích thước màn hình là 1280 x 720 */
+    width: 100%;
+    height: 100vh;
+}
+
+#banner {
+    width: 100%;
+    background-image: url('./image/banner.png');
+    background-size: 100% 100%;
+    height: 600px;
+    margin-top: 40px;
+    display: flex;
+    padding: 0 145px;
+    position: relative;
+}
+#banner .box-left {
+    width: 50%;
+}
+#banner .box-left h2{
+    font-size: 60px;
+    margin-top: 90px;
+    color: #F6C33E;
+    line-height: 90px;
+}
+#banner .box-left p {
+    color: #d0d0d0;
+    margin-top: 20px;
+    letter-spacing: 4px;
+}
+#banner .box-left button {
+    width: 190px;
+    height: 45px;
+    margin-top: 35px;
+    background-color: #162F45;
+    border: none;
+    outline: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 17px;
+    border-radius: 20px;
+    transition: 0.4s;
+}
+#banner .box-left button:hover {
+    background-color: #F6C33E;
+    color: #000;
+}  
+#wp-products {
+    padding-top: 116px;
+    padding-right: 134px;
+    padding-left: 134px;
+    padding-bottom: 78px;
+    background-color: #E0E7F5;
+    margin-top: -116px;
+}
+#wp-products h2{
+    text-align: center;
+    margin: 76px 0;
+    font-size: 32px;
+    color: #626A67;
+}
+#list-products {
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+#list-products .item {
+    width: 290px;
+    height: 400px;
+    background-color: #ffff;
+    border-radius: 20px 20px;
+    margin-bottom: 50px;
+    margin-right: 25px;
+    box-shadow: 5px 1px 15px 3px rgb(134, 134, 134);
+}
+#list-products .item>img {
+    width: 290px;
+    height: 280px;
+    border-radius: 20px 20px 0 0;
+}
+#list-products .item img{
+    display: block;
+    
+} 
+#list-products .item .stars {
+    display: flex;
+    margin: 0px auto;
+    width: 50%;
+}
+#list-products .item .stars img {
+    width: 20px;
+    height: 20px;
+    margin-right: 7px;
+}
+#list-products .item .name {
+    text-align: center;
+    color: #000;
+    font-weight: bold;
+    margin-top: 21px;
+
+}
+#list-products .item .desc{
+    text-align: center;
+    color: #626A67;
+}
+#list-products .item .price {
+    text-align: center;
+    color: #f42424;
+    font-weight: bold;
+    margin-top: 17px;
+}
+#list-page {
+    width: 50%;
+    margin: 0px auto;
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+}
+#list-page .item{
+    margin: 0px 15px;
+    width: 37px;
+    height: 37px;
+    background-color: #362f2f;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#list-page .item a {
+    color: #fff;
+    text-decoration: none;
+}
+#saleoff {
+    width: 100%;
+    height: 322px;
+    display: flex;
+}
+#saleoff .box-left, #saleoff .box-right {
+    width: 50%;
+}
+#saleoff .box-left {
+    background-color: #162F45;
+    text-align: center;
+    min-height: 322px
+}
+#saleoff .box-left h1 {
+    padding-top: 38px;
+}
+#saleoff .box-left span:nth-child(1){
+    color: #fff;
+    font-size: 55px;
+}
+#saleoff .box-left span:nth-child(2){
+    color: orange;
+    font-size: 135px;
+}
+#saleoff .box-right {
+    background-image: url("./image/off.jpg");
+}
+#comment {
+    width: 1012px;
+    height: 600px;
+    margin: 0px auto;
+    margin-top: 184px;
+    margin-bottom: 50px;
+}
+#comment h2 {
+    text-align: center;
+    margin-bottom: 50px;
+    font-size: 32px;
+    color: #626A67;
+}
+#comment-body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1000px;
+    height: 400px;
+    list-style: none;
+    overflow: hidden;
+}
+#list-comment {
+    width: 100%;
+    height: 100%;
+    list-style: none;
+    transition: 0.5s;
+}
+#list-comment .item{
+    width: 100%;
+    height: 100%;
+    background-color: #362f2f;
+    border-radius: 20px;
+    padding-top: 50px;
+}
+#list-comment .item .avatar {
+    text-align: center;
+    margin-top: 13px;
+}
+#list-comment .item .avatar img {
+    width: 70px;
+    height: 70px;
+    border: 1px solid #362f2f;
+    border-radius: 20px;
+}
+#list-comment .item .stars img {
+    width: 20px;
+    height: 20px;
+    margin-right: 7px;
+}
+#list-comment .item .stars {
+    display: flex;
+    margin: 0px auto;
+    width: 50%;
+    margin-top: 32px;
+    justify-content: center;
+    align-items: center;
+}
+#list-comment .item .name {
+    text-align: center;
+    font-weight: bold;
+    color: #fff;
+    padding: 15px 0;
+}
+#list-comment .item .text {
+    padding: 20px 50px;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+.next, .prev {
+    padding: 0 15px;
+}
