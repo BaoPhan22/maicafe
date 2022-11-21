@@ -15,6 +15,7 @@ function deleteOneCata()
     $sql = "SELECT * FROM danhmuc";
     return pdo_query($sql);
 }
+// hàm sửa một danh mục
 function updateOneCata()
 {
     if (isset($_POST['capnhatdanhmuc']) && $_POST['capnhatdanhmuc']) {

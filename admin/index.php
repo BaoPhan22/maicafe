@@ -1,10 +1,12 @@
 <?php
 include '../model/pdo.php';
 include '../model/danhmuc.php';
+include '../model/sanpham.php';
 include 'header.php';
 if (isset($_GET['act']) && ($_GET['act'] != '')) {
     switch ($_GET['act']) {
-            // start controller of cata
+
+        // start controller of cata
         case 'adddm':
             if (isset($_POST['themmoidanhmuc']) && $_POST['themmoidanhmuc']) {
                 $ten_loai = $_POST['tenloai'];
@@ -34,9 +36,11 @@ if (isset($_GET['act']) && ($_GET['act'] != '')) {
             showAllCata();
             header('location: index.php?act=danhsachdanhmuc');
             break;
-            // end controller of cata
-        case 'qlsanpham':
-            echo '<h1>Quản lí sản phẩm</h1>';
+        // end controller of cata
+
+        // start controller product
+        case 'addsp':
+            include 'sanpham/add.php';
             break;
         case 'qlbinhluan':
             echo '<h1>Quản lí bình luận</h1>';
