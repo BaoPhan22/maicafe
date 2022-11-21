@@ -1,7 +1,5 @@
-<h1>Thêm sản phẩm (loại hàng)</h1>
-
-
 <form action="index.php?act=addsp" method="post" enctype="multipart/form-data">
+    <h1>Thêm sản phẩm (loại hàng)</h1>
     <div class="form-group">
         <input type="text" class="form-control" name="mahh" id="maHangHoa" placeholder="Mã sản phẩm" disabled>
     </div>
@@ -11,6 +9,10 @@
     <div class="form-group">
         <input type="text" class="form-control" name="giahh" id="giaHangHoa" placeholder="Đơn giá">
     </div>
+    <select class="custom-select mb-3" name="theloai">
+        <option value="a">a</option>
+        <option value="b">b</option>
+    </select>
     <div class="form-group">
         <input type="text" class="form-control" name="giamgiahh" id="giamGiaHangHoa" placeholder="Giảm giá">
     </div>
@@ -18,19 +20,14 @@
         <input type="file" class="form-control-file" name="hinhanhhh" id="hinhAnhHangHoa">
     </div>
     <div class="form-group">
-        <textarea name="motahh" id="" cols="30" rows="3" placeholder="Mô tả"></textarea>
+        <textarea class="form-control" name="motahh" id="" cols="30" rows="3" placeholder="Mô tả"></textarea>
+    </div>
+    <div class="form-group">
+        <input type="number" class="form-control">
     </div>
     <div class="form-group">
         <!-- <label for="ngayNhap">Ngày nhập</label> -->
-        <input type="date" class="form-control-file" name="ngaynhap" id="ngayNhap">
-    </div>
-    <div class="custom-control custom-radio">
-        <input type="radio" id="customRadio1" name="loaihangdacbiet" class="custom-control-input" value="1">
-        <label class="custom-control-label" for="customRadio1">Hàng đặc biệt</label>
-    </div>
-    <div class="custom-control custom-radio">
-        <input type="radio" id="customRadio2" name="loaihangdacbiet" class="custom-control-input" value="0" checked>
-        <label class="custom-control-label" for="customRadio2">Hàng bình thường</label>
+        <input type="date" class="form-control" name="ngaynhap" id="ngayNhap">
     </div>
     <div class="button">
         <input type="submit" name="themmoi" class="btn btn-primary" value="Thêm mới">
@@ -44,32 +41,9 @@
     }
     ?>
 </form>
-<!-- <style>
+<style>
     form {
-        display: flex;
-        flex-flow: row wrap;
-        justify-content: center;
+        width: 60%;
+        margin: auto;
     }
-
-    form div,
-    form select {
-        width: 47% !important;
-        margin: 10px 6px;
-    }
-
-    .button {
-        width: 100% !important;
-        display: flex;
-        flex-flow: wrap row;
-        justify-content: center;
-    }
-
-    .button>* {
-        width: 30%;
-        margin-right: 5px;
-    }
-
-    .button a input {
-        width: 100%;
-    }
-</style> -->
+</style>
