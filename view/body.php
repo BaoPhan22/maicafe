@@ -1,1 +1,1 @@
-<h1>Trang chủ</h1>
+<div class="row content"></div>
