@@ -1,4 +1,6 @@
-<form action="index.php?act=addsp" method="post" enctype="multipart/form-data">
+<link rel="stylesheet" href="css/sanpham.css">
+
+<form action="index.php?act=addsp" method="post" enctype="multipart/form-data" class="container">
     <h1>Thêm sản phẩm (loại hàng)</h1>
     <div class="form-group">
         <input type="text" class="form-control" name="mahh" id="maHangHoa" placeholder="Mã sản phẩm" disabled>
@@ -10,8 +12,16 @@
         <input type="text" class="form-control" name="giahh" id="giaHangHoa" placeholder="Đơn giá">
     </div>
     <select class="custom-select mb-3" name="theloai">
-        <option value="a">a</option>
-        <option value="b">b</option>
+        <?php
+        include "model/pdo.php";
+        $arr = showAllCata();
+
+        foreach ($arr as $row) {
+            echo '
+                <option value="' . $row['id'] . '">' . $row['ten_danh_muc'] . '</option>
+        ';
+        }
+        ?>
     </select>
     <div class="form-group">
         <input type="text" class="form-control" name="giamgiahh" id="giamGiaHangHoa" placeholder="Giảm giá">
@@ -41,9 +51,3 @@
     }
     ?>
 </form>
-<style>
-    form {
-        width: 60%;
-        margin: auto;
-    }
-</style>

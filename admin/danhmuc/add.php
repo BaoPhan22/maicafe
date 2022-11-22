@@ -1,5 +1,6 @@
-<h1>Thêm danh mục (loại hàng)</h1>
-<form action="index.php?act=adddm" method="post">
+<form action="index.php?act=adddm" method="post" class="container">
+    <h1>Thêm danh mục (loại hàng)</h1>
+
     <div class="form-group">
         <label for="maLoai">Mã loại</label>
         <input type="text" class="form-control" name="maloai" id="maLoai" placeholder="Mã loại" disabled>

@@ -42,6 +42,8 @@ if (isset($_GET['act']) && ($_GET['act'] != '')) {
         case 'addsp':
             include 'sanpham/add.php';
             break;
+
+        // end controller of product
         case 'qlbinhluan':
             echo '<h1>Quản lí bình luận</h1>';
             break;

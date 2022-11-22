@@ -10,8 +10,16 @@
         <input type="text" class="form-control" name="giahh" id="giaHangHoa" placeholder="Đơn giá">
     </div>
     <select class="custom-select mb-3" name="theloai">
-        <option value="a">a</option>
-        <option value="b">b</option>
+        <?php
+        include "model/pdo.php";
+        $arr = showAllCata();
+
+        foreach ($arr as $row) {
+            echo '
+                <option value="' . $row['id'] . '">' . $row['ten_danh_muc'] . '</option>
+        ';
+        }
+        ?>
     </select>
     <div class="form-group">
         <input type="text" class="form-control" name="giamgiahh" id="giamGiaHangHoa" placeholder="Giảm giá">
