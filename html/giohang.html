@@ -51,7 +51,7 @@
             background-color: #162F45;
             color: white;
             font-weight: bold;
-            font-size: 20px;
+            font-size: 15px;
         }
         #fs1 input{
             padding: 1000px;
@@ -81,42 +81,43 @@
     
     <form name="form1" action="" id="form1">
         
-        <h2 style="text-align: center;">ĐĂNG KÝ</h2>
+        <h2 style="text-align: center;">ĐẶT HÀNG</h2>
         
         <p>
-            <label for="">TÀI KHOẢN</label>
+            <label for="">HỌ</label>
             <input required minlength="2" maxlength="30" ng-model="tendangnhap" name="tendangnhap" type="text" id="hoten" class="txt">
-            <em ng-if="form1.tendangnhap.$invalid" class="loi">Nhập tên đăng nhập</em>
+            <em ng-if="form1.tendangnhap.$invalid" class="loi">NHẬP HỌ </em>
         </p>
+        
         <p>
-            <label for="">MẬT KHẨU</label>
-            <input required minlength="2" maxlength="30" ng-model="Matkhau" name="matkhau" type="text" id="hoten" class="txt">
-            <em ng-if="form1.matkhau.$invalid" class="loi">Xin mời nhập mật khẩu</em>
-        </p>
-        <p>
-            <label for="">NHẬP LẠI MẬT KHẨU</label>
-            <input required minlength="2" maxlength="30" ng-model="nlmk" name="nlmk" type="text" id="hoten" class="txt">
-            <em ng-if="form1.nlmk.$invalid" class="loi">Xin mời nhập lại mật khẩu</em>
-        </p>
-        <p>
-            <label for="">HỌ TÊN</label><br>
+            <label for="">TÊN</label><br>
             <input required minlength="2" maxlength="30" ng-model="hoten" name="hoten" type="text" id="hoten" class="txt">
-            <em ng-if="form1.hoten.$invalid" class="loi">Nhập họ tên từ 2 đến 30 ký tự</em>
+            <em ng-if="form1.hoten.$invalid" class="loi">NHẬP TÊN </em>
         </p>
         <p>
-            <label for="">EMAIL</label><br>
+            <label for="">ĐỊA CHỈ</label><br>
+            <input required minlength="2" maxlength="30" ng-model="hoten" name="hoten" type="text" id="hoten" class="txt">
+            <em ng-if="form1.hoten.$invalid" class="loi">NHẬP DỊA CHỈ  </em>
+        </p>
+        <p>
+            <label for="">SỐ ĐIỆN THOẠI</label><br>
+            <input required minlength="2" maxlength="30" ng-model="hoten" name="hoten" type="text" id="hoten" class="txt">
+            <em ng-if="form1.hoten.$invalid" class="loi">NHẬP SỐ ĐIỆN THOẠI  </em>
+        </p>
+        <p>
+            <label for="">GHI CHÚ</label><br>
             <input ng-model="email" type="email" name="email" id="email" class="txt">
             <em ng-if="form1.email.$invalid    " class="loi">Nhập đúng gmail</em>
         </p>
-        
+        <h5>PHƯƠNG THỨC THANH TOÁN</h5>
         <fieldset id="fs1">
-            <input ng-model="gioitinh" type="checkbox" name="gioitinh" value="1"><label for="">NAM</label>
-            <input ng-model="gioitinh2" type="checkbox" name="gioitinh" value="2"><label for="">NỮ</label><br>
-            <em ng-if="!gioitinh>=1" class="loi">Chọn Giới tính</em>
+            <input ng-model="gioitinh" type="radio" name="gioitinh" value="1"><label for="">COD (Thanh toán khi nhập hàng)</label><br>
+            <input ng-model="gioitinh2" type="radio" name="gioitinh" value="2"><label for="">ATM</label><br>
+            <em ng-if="!gioitinh>=1" class="loi">CHỌN PHƯƠNG THỨC THANH TOÁN</em>
         </fieldset>
         <div name="baoloi" id="baoloi">
         </div>
-        <button class="button"  ng-model="button" >ĐĂNG KÝ</button>
+        <button class="button"  ng-model="button" >TẠO ĐƠN HÀNG</button>
         <br>
       <em class="loi" ng-if="(!form1.masv.$invalid) && (!form1.hoten.$invalid) && (!form1.email.$invalid ) && (gioitinh>=1) && (st1 ||st2 ||st3 || st4 || st5) && (qt>0) && (ghichu)">Nhập đúng</em>
 
