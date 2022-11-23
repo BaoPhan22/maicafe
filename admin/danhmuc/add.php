@@ -25,26 +25,3 @@
     }
     ?>
 </form>
-<style>
-    .button {
-        width: 100% !important;
-        display: flex;
-        flex-flow: wrap row;
-        justify-content: center;
-    }
-
-    .button>* {
-        width: 30%;
-        margin-right: 5px;
-    }
-
-    .button a input {
-        width: 100%;
-    }
-
-    .custom-control,
-    .custom-radio {
-        width: 100% !important;
-        margin-left: 20px;
-    }
-</style>

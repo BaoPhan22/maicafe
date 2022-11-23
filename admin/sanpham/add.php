@@ -9,9 +9,10 @@
         <input type="text" class="form-control" name="tenhh" id="tenHangHoa" placeholder="Tên sản phẩm">
     </div>
     <div class="form-group">
-        <input type="text" class="form-control" name="giahh" id="giaHangHoa" placeholder="Đơn giá">
+        <input type="number" class="form-control" name="giahh" id="giaHangHoa" placeholder="Đơn giá" min="0">
     </div>
     <select class="custom-select mb-3" name="theloai">
+        <option value="">Loại hàng</option>
         <?php
         include "model/pdo.php";
         $arr = showAllCata();
@@ -24,7 +25,10 @@
         ?>
     </select>
     <div class="form-group">
-        <input type="text" class="form-control" name="giamgiahh" id="giamGiaHangHoa" placeholder="Giảm giá">
+        <input type="number" class="form-control" placeholder="Số lượng tồn kho" min="0" name="sltk">
+    </div>
+    <div class="form-group">
+        <input type="number" max="100" min="0" class="form-control" name="giamgiahh" id="giamGiaHangHoa" placeholder="Giảm giá (%)">
     </div>
     <div class="form-group">
         <input type="file" class="form-control-file" name="hinhanhhh" id="hinhAnhHangHoa">
@@ -33,14 +37,11 @@
         <textarea class="form-control" name="motahh" id="" cols="30" rows="3" placeholder="Mô tả"></textarea>
     </div>
     <div class="form-group">
-        <input type="number" class="form-control">
-    </div>
-    <div class="form-group">
         <!-- <label for="ngayNhap">Ngày nhập</label> -->
         <input type="date" class="form-control" name="ngaynhap" id="ngayNhap">
     </div>
     <div class="button">
-        <input type="submit" name="themmoi" class="btn btn-primary" value="Thêm mới">
+        <input type="submit" name="themmoisanpham" class="btn btn-primary" value="Thêm mới">
         <input type="reset" class="btn btn-secondary" value="Nhập lại">
         <a href="index.php?act=danhsachsanpham"><input class="btn btn-secondary" value="Danh sách"></a>
     </div>
@@ -51,3 +52,6 @@
     }
     ?>
 </form>
+
+<!-- $mydate=getdate(date("U"));
+echo "$mydate[mday]/$mydate[mon]/$mydate[year]"; -->

@@ -13,10 +13,10 @@
 </head>
 
 <body>
-    <nav>
+    <nav id="menu-container">
         <h3>Trang quản trị</h3>
         <ul>
-            <li><a href="index.php?act=adddm">Danh mục<span><i class="fas fa-caret-down"></i></span></a>
+            <li class="menu-anchor"><a href="index.php?act=adddm">Danh mục<span><i class="fas fa-caret-down"></i></span></a>
                 <ul class="sub-menu">
                     <li><a href="index.php?act=adddm">Thêm danh mục</a></li>
                     <li><a href="index.php?act=danhsachdanhmuc">Danh sách</a>
@@ -24,7 +24,7 @@
                     </li>
                 </ul>
             </li>
-            <li><a href="index.php?act=addsp">Sản phẩm<span><i class="fas fa-caret-down"></i></span></a>
+            <li class="menu-anchor"><a href="index.php?act=addsp">Sản phẩm<span><i class="fas fa-caret-down"></i></span></a>
                 <ul class="sub-menu">
                     <li><a href="index.php?act=addsp">Thêm sản phẩm</a></li>
                     <li><a href="index.php?act=danhsachsanpham">Danh sách<span><i class="fas fa-caret-down"></i></span></a>
@@ -32,16 +32,18 @@
                             <?php
                             $arr = showAllCata();
                             foreach ($arr as $a) {
-                                echo '<li><a href="#">' . $a['ten_danh_muc'] . '</a></li>';
+                                echo '<li><a href="index.php?act=danhsachsanpham&idcata='.$a['id'].'">' . $a['ten_danh_muc'] . '</a></li>';
                             }
                             ?>
                         </ul>
                     </li>
                 </ul>
             </li>
-            <li><a href="index.php?act=qlkhachhang">Khách hàng<span><i class="fas fa-caret-down"></i></span></a></li>
-            <li><a href="index.php?act=qlbinhluan">Bình luận<span><i class="fas fa-caret-down"></i></span></a></li>
-            <li><a href="index.php?act=thongke">Thống kê<span><i class="fas fa-caret-down"></i></span></a></li>
-            <li><a href="../view/index.php">Xem Website</a></li>
+            <li class="menu-anchor"><a href="index.php?act=qlkhachhang">Khách hàng<span><i class="fas fa-caret-down"></i></span></a></li>
+            <li class="menu-anchor"><a href="index.php?act=qlbinhluan">Bình luận<span><i class="fas fa-caret-down"></i></span></a></li>
+            <li class="menu-anchor"><a href="index.php?act=thongke">Thống kê<span><i class="fas fa-caret-down"></i></span></a></li>
+            <li class="menu-anchor"><a href="../view/index.php">Xem Website</a></li>
         </ul>
     </nav>
+
+    <!-- <script src="js/activepage.js"></script> -->

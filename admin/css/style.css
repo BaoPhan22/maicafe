@@ -24,6 +24,7 @@ nav a {
 
 .container {
   margin-left: var(--menu-width);
+  width: 1024px;
 }
 nav ul li {
   position: relative;
@@ -73,4 +74,11 @@ nav > ul > li > a {
 }
 a:hover > span {
   transform: rotate(-90deg);
+}
+.w50-inline {
+    width: 45%;
+    display: inline-block;
+}
+.active {
+  background: gray;
 }
