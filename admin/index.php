@@ -1,13 +1,47 @@
 <?php
+include '../model/pdo.php';
+include '../model/danhmuc.php';
+include '../model/sanpham.php';
 include 'header.php';
 if (isset($_GET['act']) && ($_GET['act'] != '')) {
     switch ($_GET['act']) {
-        case 'qldanhmuc':
-            echo '<h1>Quản lí danh mục</h1>';
+
+            // start controller of cata
+        case 'adddm':
+            addOneCata();
+            include 'danhmuc/add.php';
             break;
-        case 'qlsanpham':
-            echo '<h1>Quản lí sản phẩm</h1>';
+        case 'danhsachdanhmuc':
+            include 'danhmuc/list.php';
             break;
+        case 'deletedm':
+            deleteOneCata();
+            showAllCata();
+            include 'danhmuc/list.php';
+            break;
+        case 'suadm':
+            if (isset($_GET['id']) && $_GET['id'] > 0) {
+                $sql = "SELECT * FROM danhmuc WHERE id=" . $_GET['id'];
+                $dm = pdo_query_one($sql);
+            }
+            include 'danhmuc/update.php';
+            break;
+        case 'updatedm':
+            updateOneCata();
+            showAllCata();
+            header('location: index.php?act=danhsachdanhmuc');
+            break;
+            // end controller of cata
+
+            // start controller product
+        case 'addsp':
+            addOneProduct();
+            include 'sanpham/add.php';
+            break;
+        case 'danhsachsanpham':
+            include 'sanpham/list.php';
+            break;
+            // end controller of product
         case 'qlbinhluan':
             echo '<h1>Quản lí bình luận</h1>';
             break;

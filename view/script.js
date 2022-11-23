@@ -1,10 +1,9 @@
-const next = document.querySelector('.next')
-const prev = document.querySelector('.prev')
+const tick = document.querySelector('.item')
 
-const comment = document.querySelector('#list-comment')
-const commentItem = document.querySelectorAll('#list-comment .item')
+const product = document.querySelector('#list-products')
+const productItem = document.querySelectorAll('#list-page .item')
 var translateY = 0
-var count = commentItem.length
+var count = productItem.length
 
 next.addEventListener('click', function(event) {
     event.preventDefault()

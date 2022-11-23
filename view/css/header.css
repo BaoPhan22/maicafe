@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap');
+
+body {
+    margin: 0;
+    font-family: 'Open Sans', 'sans-serif';
+}
+
+/* chia layout */
+.row {
+    float: left;
+    width: 100%;
+}
+
+.top {
+    min-height: 85px;
+    background-color: #a36f2f;
+    position: fixed;
+    top:0;
+    left:0;
+    transition: all 0.5s ease-in-out ;
+}
+.content {
+    background-color: white;
+    min-height: 700px;
+
+}
+
+.recentnew {
+    background-color: rgb(228, 227, 227);
+    min-height: 200px;
+}
+
+.footer {
+    background-color: rgb(37, 46, 77);
+    min-height: 200px;
+}
+
+.boxcenter {
+    width: 100%;
+    padding-top: 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.boxcenter a img {
+    width: 100px;
+    padding-left: 80px;
+    float: right;
+    transition: calc(0.4s);
+}
+.boxcenter a:hover img{
+    filter: opacity(60%);
+}
+
+#menu {
+    list-style: none;
+    display: flex;
+}
+
+#menu .item {
+    margin: 0 25px;
+    padding: 10px 5px;
+}
+
+#menu .item a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 900;
+    font-size: 16px;
+    transition: calc(0.4s);
+}
+
+#menu .item:hover a {
+    color: #8B4513;
+    font-weight: 900;
+    border-bottom: 5px solid #8B4513;
+    padding-bottom: 10px;
+}
+
+#action {
+    display: flex;
+    margin-right: 50px;
+    padding-top: 1 0px;
+}
+
+#action .item {
+    margin: 0 10px;
+    padding: 10px 5px;
+}
+
+#action .item a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 900;
+    font-size: 21px;
+    transition: calc(0.4s);
+}
+
+#action .item:hover a {
+    color: #8B4513;
+    font-weight: 900;
+    border-bottom: 5px solid #8B4513;
+    padding-bottom: 10px;
+}
+
+#action .search {
+    margin: 0 10px;
+    padding: 10px 5px;
+    background: #ffffff;
+    position: absolute;
+    padding: 10px;
+    border-radius: 50px;
+}
+
+#action .search a {
+    color: #494949;
+    text-decoration: none;
+    font-weight: 900;
+    font-size: 21px;
+}
+
+#action .search:hover a {
+    color: rgb(249, 198, 31);
+    border-radius: 10px;
+}
