@@ -1,17 +1,14 @@
 <?php
 include '../model/pdo.php';
 include '../model/danhmuc.php';
+include '../model/sanpham.php';
 include 'header.php';
 if (isset($_GET['act']) && ($_GET['act'] != '')) {
     switch ($_GET['act']) {
+
             // start controller of cata
         case 'adddm':
-            if (isset($_POST['themmoidanhmuc']) && $_POST['themmoidanhmuc']) {
-                $ten_loai = $_POST['tenloai'];
-                $stt_loai = $_POST['stt_loai'];
-                $sql = 'INSERT INTO danhmuc(ten_danh_muc,stt) VALUES ("' . $ten_loai . '",' . $stt_loai . ')';
-                pdo_query($sql);
-            }
+            addOneCata();
             include 'danhmuc/add.php';
             break;
         case 'danhsachdanhmuc':
@@ -35,9 +32,16 @@ if (isset($_GET['act']) && ($_GET['act'] != '')) {
             header('location: index.php?act=danhsachdanhmuc');
             break;
             // end controller of cata
-        case 'qlsanpham':
-            echo '<h1>Quản lí sản phẩm</h1>';
+
+            // start controller product
+        case 'addsp':
+            addOneProduct();
+            include 'sanpham/add.php';
             break;
+        case 'danhsachsanpham':
+            include 'sanpham/list.php';
+            break;
+            // end controller of product
         case 'qlbinhluan':
             echo '<h1>Quản lí bình luận</h1>';
             break;
