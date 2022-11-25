@@ -16,6 +16,6 @@ if (isset($_GET['act']) && ($_GET['act'] != '')) {
             break;
     }
 } else {
-    include 'body.php';
+    include 'body.html';
 }
 include 'footer.php';
