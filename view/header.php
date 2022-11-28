@@ -28,7 +28,7 @@
             </div>
             <div id="action">
                 <div class="item"><a href=""><i class="fa-solid fa-user"></i></a></div>
-                <div class="item"><a href=""><i class="fa-solid fa-cart-shopping"></i></a></div>
+                <div class="item"><a href="index.php?act=cart"><i class="fa-solid fa-cart-shopping"></i></a></div>
                 <div class="item"><a href=""><i class="fa-solid fa-magnifying-glass"></i></a></div>
             </div>
         </div>

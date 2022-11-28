@@ -1,235 +1,175 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.9/angular.min.js"></script>
+    <link rel="stylesheet" href="css/cart.css" />
+  </head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.9/angular.min.js"> </script>
-    <title>Đăng ký</title>
-    <style>
-        
-        body {
-            font-family: Arial, Helvetica, sans-serif;
-            width: 100%;
-        
-            background: #ffffff;
-        }
-        .container {
-            display: flex;
-            width: 100%;
-            margin: auto;
-        }
-        #form1 {
-            box-shadow: 10px 10px 15px 2px #ccc;
-            border-bottom: 10px;
-            width: 415px;
-            margin: 0 10px 0 150px;
-            padding: 10px 40px;
-            border: 1px solid black;
-        }
-
-        #form1 .txt {
-            width: 400px;
-            padding: 6px;
-            border: none;
-        }
-
-        #form1 fieldset {
-            border: none;
-            
-        }
-        #form1  .border-bottom{
-            border-bottom:2px solid #D9D9D9 ;
-        }
-
-        .button{
-           margin-left: 50px;
-            width: 315px;
-            height: 50px;
-            border-radius: 3px;
-            background-color: #162F45;
-            color: white;
-            font-weight: bold;
-            font-size: 15px;
-        }
-        #fs1 input{
-            padding: 1000px;
-        }
-        #form1 #baoloi {
-            margin: 0px auto;
-            color: red;
-        }
-
-
-        #form1 #baoloi {
-            margin: 0px auto;
-            color: red;
-        }
-
-        #form1 .loi {
-           color: rgb(234, 10, 10);
-         
-        }
-        .spgiohang{
-            height: 50px;
-            width: 50px;
-        }
-        input.name{
-            width: 245px;
-            height: 20px;
-        }
-        #sanpham{
-            display: flex;
-            justify-content: space-between;
-        }
-        .itemsp{
-            display: flex;
-            
-        }
-        .spgiohang{
-            margin-top: 50px;
-        }
-        .itemgia{
-            margin-top: 50px;
-        }
-        .apma{
-            border: 0px;
-            width:100px ;
-            height: 30px;
-            margin-left: 20px;
-        }
-        .magiamgia{
-            margin: 4px;
-        }
-        .tdh{
-            display: flex;
-            justify-content: space-between;
-        }
-        .giadh{
-            margin-top: 20px;
-        }
-        
-    </style>
-</head>
-
-<body ng-app="b4" ng-controller="ctr1">
-  
-
+  <body ng-app="b4" ng-controller="ctr1">
     <div class="container">
+      <form name="form1" action="" id="form1">
+        <h2 style="text-align: center">ĐẶT HÀNG</h2>
+
+        <p class="border-bottom">
+          <label for="">HỌ</label>
+          <input
+            required
+            minlength="2"
+            maxlength="30"
+            ng-model="tendangnhap"
+            name="tendangnhap"
+            type="text"
+            id="hoten"
+            class="txt"
+          />
+          <em ng-if="form1.tendangnhap.$invalid" class="loi">NHẬP HỌ </em>
+        </p>
+
+        <p class="border-bottom">
+          <label for="">TÊN</label><br />
+          <input
+            required
+            minlength="2"
+            maxlength="30"
+            ng-model="hoten"
+            name="hoten"
+            type="text"
+            id="hoten"
+            class="txt"
+          />
+          <em ng-if="form1.hoten.$invalid" class="loi">NHẬP TÊN </em>
+        </p>
+        <p class="border-bottom">
+          <label for="">ĐỊA CHỈ</label><br />
+          <input
+            required
+            minlength="2"
+            maxlength="30"
+            ng-model="hoten"
+            name="hoten"
+            type="text"
+            id="hoten"
+            class="txt"
+          />
+          <em ng-if="form1.hoten.$invalid" class="loi">NHẬP DỊA CHỈ </em>
+        </p>
+        <p class="border-bottom">
+          <label for="">SỐ ĐIỆN THOẠI</label><br />
+          <input
+            required
+            minlength="2"
+            maxlength="30"
+            ng-model="hoten"
+            name="hoten"
+            type="text"
+            id="hoten"
+            class="txt"
+          />
+          <em ng-if="form1.hoten.$invalid" class="loi">NHẬP SỐ ĐIỆN THOẠI </em>
+        </p>
+        <p class="border-bottom">
+          <label for="">GHI CHÚ</label><br />
+          <input
+            ng-model="email"
+            type="email"
+            name="email"
+            id="email"
+            class="txt"
+          />
+          <em ng-if="form1.email.$invalid " class="loi">Nhập đúng gmail</em>
+        </p>
+        <h5>PHƯƠNG THỨC THANH TOÁN</h5>
+        <fieldset id="fs1">
+          <input
+            ng-model="gioitinh"
+            type="radio"
+            name="gioitinh"
+            value="1"
+          /><label for="">COD (Thanh toán khi nhập hàng)</label><br />
+          <input
+            ng-model="gioitinh2"
+            type="radio"
+            name="gioitinh"
+            value="2"
+          /><label for="">ATM</label><br />
+          <em ng-if="!gioitinh>=1" class="loi">CHỌN PHƯƠNG THỨC THANH TOÁN</em>
+        </fieldset>
+        <div name="baoloi" id="baoloi"></div>
+        <button class="button" ng-model="button">TẠO ĐƠN HÀNG</button>
+        <br />
+        <em
+          class="loi"
+          ng-if="(!form1.masv.$invalid) && (!form1.hoten.$invalid) && (!form1.email.$invalid ) && (gioitinh>=1) && (st1 ||st2 ||st3 || st4 || st5) && (qt>0) && (ghichu)"
+          >Nhập đúng</em
+        >
+      </form>
+      <div>
         <form name="form1" action="" id="form1">
-        
-            <h2 style="text-align: center;">ĐẶT HÀNG</h2>
-            
-            <p class="border-bottom">
-                <label for="">HỌ</label>
-                <input required minlength="2" maxlength="30" ng-model="tendangnhap" name="tendangnhap" type="text" id="hoten" class="txt">
-                <em ng-if="form1.tendangnhap.$invalid" class="loi">NHẬP HỌ </em>
-            </p>
-            
-            <p class="border-bottom">
-                <label for="">TÊN</label><br>
-                <input required minlength="2" maxlength="30" ng-model="hoten" name="hoten" type="text" id="hoten" class="txt">
-                <em ng-if="form1.hoten.$invalid" class="loi">NHẬP TÊN </em>
-            </p>
-            <p class="border-bottom">
-                <label for="">ĐỊA CHỈ</label><br>
-                <input required minlength="2" maxlength="30" ng-model="hoten" name="hoten" type="text" id="hoten" class="txt">
-                <em ng-if="form1.hoten.$invalid" class="loi">NHẬP DỊA CHỈ  </em>
-            </p>
-            <p class="border-bottom">
-                <label for="">SỐ ĐIỆN THOẠI</label><br>
-                <input required minlength="2" maxlength="30" ng-model="hoten" name="hoten" type="text" id="hoten" class="txt">
-                <em ng-if="form1.hoten.$invalid" class="loi">NHẬP SỐ ĐIỆN THOẠI  </em>
-            </p>
-            <p class="border-bottom">
-                <label for="">GHI CHÚ</label><br>
-                <input ng-model="email" type="email" name="email" id="email" class="txt">
-                <em ng-if="form1.email.$invalid " class="loi">Nhập đúng gmail</em>
-            </p>
-            <h5>PHƯƠNG THỨC THANH TOÁN</h5>
-            <fieldset id="fs1">
-                <input ng-model="gioitinh" type="radio" name="gioitinh" value="1"><label for="">COD (Thanh toán khi nhập hàng)</label><br>
-                <input ng-model="gioitinh2" type="radio" name="gioitinh" value="2"><label for="">ATM</label><br>
-                <em ng-if="!gioitinh>=1" class="loi">CHỌN PHƯƠNG THỨC THANH TOÁN</em>
-            </fieldset>
-            <div name="baoloi" id="baoloi">
+          <div class="sanpham border-bottom" id="sanpham">
+            <div class="itemsp">
+              <div>
+                <img class="spgiohang" src="./img/spcafe.jpg" alt="" />
+              </div>
+              <div>
+                <h5>Timor laclo x1</h5>
+                <p class="giasp">250g</p>
+                <p class="tensp">Whole Beans</p>
+              </div>
             </div>
-            <button class="button"  ng-model="button" >TẠO ĐƠN HÀNG</button>
-            <br>
-          <em class="loi" ng-if="(!form1.masv.$invalid) && (!form1.hoten.$invalid) && (!form1.email.$invalid ) && (gioitinh>=1) && (st1 ||st2 ||st3 || st4 || st5) && (qt>0) && (ghichu)">Nhập đúng</em>
-    
+            <div class="itemgia">
+              <p>$19.50</p>
+            </div>
+          </div>
+
+          <div class="sanpham border-bottom" id="sanpham">
+            <div class="itemsp">
+              <div>
+                <img class="spgiohang" src="./img/spcafe.jpg" alt="" />
+              </div>
+              <div>
+                <h5>Timor laclo x1</h5>
+                <p class="giasp">250g</p>
+                <p class="tensp">Whole Beans</p>
+              </div>
+            </div>
+            <div class="itemgia">
+              <p>$19.50</p>
+            </div>
+          </div>
+          <div class="magiamgia">
+            <h4>Mã giảm giá</h4>
+            <input type="text" class="name" />
+            <button class="apma">Áp mã</button>
+          </div>
+          <div class="tdh">
+            <div>
+              <h4>Tổng đơn hàng</h4>
+            </div>
+            <div class="giadh">$15.95</div>
+          </div>
+
+          <div class="tdh">
+            <div>
+              <h4>Tổng đơn hàng</h4>
+            </div>
+            <div class="giadh">$15.95</div>
+          </div>
+          <div class="tdh">
+            <div>
+              <h4>Tổng đơn hàng</h4>
+            </div>
+            <div class="giadh">$15.95</div>
+          </div>
         </form>
-        <div>
-            <form name="form1" action="" id="form1">
-                <div class="sanpham border-bottom" id="sanpham">
-                    <div class="itemsp">
-                        <div  >
-                             <img class="spgiohang" src="./img/spcafe.jpg" alt="">
-                        </div>
-                        <div>
-                            <h5>Timor laclo x1</h5>
-                            <p class="giasp">250g</p>
-                            <p class="tensp">Whole Beans</p>
-                        </div>
-                    </div>
-                    <div class="itemgia">
-                        <p>$19.50</p>
-                    </div>
-                    
-                </div>
-                
-                <div class="sanpham border-bottom" id="sanpham">
-                    <div class="itemsp">
-                        <div  >
-                             <img class="spgiohang" src="./img/spcafe.jpg" alt="">
-                        </div>
-                        <div>
-                            <h5>Timor laclo x1</h5>
-                            <p class="giasp">250g</p>
-                            <p class="tensp">Whole Beans</p>
-                        </div>
-                    </div>
-                    <div class="itemgia">
-                        <p>$19.50</p>
-                    </div>
-                    
-                </div>
-                <div class="magiamgia" >
-                    <h4>Mã giảm giá</h4>
-                    <input type="text" class="name" >
-                    <button class="apma">Áp mã</button>
-                </div>
-                <div class="tdh">
-                    <div>
-                        <h4>Tổng đơn hàng</h4>
-                    </div>
-                    <div class="giadh">$15.95</div>
-                </div>
-
-                <div class="tdh">
-                    <div>
-                        <h4>Tổng đơn hàng</h4>
-                    </div>
-                    <div class="giadh">$15.95</div>
-                </div>
-                <div class="tdh">
-                    <div>
-                        <h4>Tổng đơn hàng</h4>
-                    </div>
-                    <div class="giadh">$15.95</div>
-                </div>
-            </form>
-        </div>
+      </div>
     </div>
-    
-    
-</body>
-
+  </body>
 </html>
 <script>
-     app = angular.module("b4", []);
-    app.controller("ctr1", xuly);
-    function xuly($scope) {
-    }
+  app = angular.module("b4", []);
+  app.controller("ctr1", xuly);
+  function xuly($scope) {}
 </script>
