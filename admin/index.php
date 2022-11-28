@@ -41,7 +41,34 @@ if (isset($_GET['act']) && ($_GET['act'] != '')) {
         case 'danhsachsanpham':
             include 'sanpham/list.php';
             break;
+        case 'deletesp':
+            $target_dir = "../uploads/hanghoa/";
+            $sqlchonhinhanhtudb = 'SELECT hinh_anh FROM sanpham WHERE id='.$_GET['id'];
+            $tenhinhanh = pdo_query_one($sqlchonhinhanhtudb);
+            $tenhinhanhbixoa = implode($tenhinhanh);
+            $duongdanhinhanhbixoa=$target_dir.$tenhinhanhbixoa;
+            if (is_file($duongdanhinhanhbixoa)) {
+                unlink($duongdanhinhanhbixoa);
+            }
+            deleteOneProduct();
+            showAllProduct();
+            include 'sanpham/list.php';
+            break;
+        case 'suasp':
+            
+            if (isset($_GET['id']) && $_GET['id'] > 0) {
+                $sql = "SELECT * FROM sanpham WHERE id=" . $_GET['id'];
+                $sp = pdo_query_one($sql);
+            }
+            include 'sanpham/update.php';
+            break;
+        case 'updatesp':
+            updateProDuct();
+            showAllProduct();
+            header('location: index.php?act=danhsachsanpham');
+            break;
             // end controller of product
+
         case 'qlbinhluan':
             echo '<h1>Quản lí bình luận</h1>';
             break;
