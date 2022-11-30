@@ -1,0 +1,67 @@
+body {
+  width: 100%;
+  padding-top: 120px;
+  background: #ffffff;
+}
+.container {
+  width: 100%;
+  margin: auto;
+  padding-top: 110px;
+}
+#form1 {
+  box-shadow: 10px 10px 15px 2px #ccc;
+  border-bottom: 10px;
+  width: 415px;
+  margin: auto;
+  padding: 10px 40px;
+  margin-bottom: 20px;
+
+  border: 1px solid black;
+}
+
+#form1 .txt {
+  width: 400px;
+  padding: 6px;
+  border: none;
+}
+
+#form1 fieldset {
+  border: none;
+}
+
+#form1 p {
+  border-bottom: 2px solid #111111;
+}
+
+.button {
+  margin-left: 50px;
+  width: 315px;
+
+  height: 50px;
+  border-radius: 3px;
+  background-color: #000000;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.ghinho {
+  margin: 10px;
+  margin-bottom: 20px;
+}
+
+.quen {
+  text-align: center;
+  margin: 10px;
+}
+
+a {
+  line-height: 25px;
+  text-decoration: none;
+  color: #000000;
+  text-align: center;
+}
+
+a:hover {
+  color: blue;
+}

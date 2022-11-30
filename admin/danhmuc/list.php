@@ -16,7 +16,7 @@ foreach ($arr as $row) {
             <td>' . $id . '</td>
             <td>' . $ten_danh_muc . '</td>
             <td>' . $stt . '</td>
-            <td><a href="' . $xoadm . '"><i class="fas fa-edit"></i></a> | <a href="' . $suadm . '"><i class="fas fa-trash-alt"></i></a>
+            <td><a href="' . $suadm . '"><i class="fas fa-edit"></i></a> | <a href="' . $xoadm . '"><i class="fas fa-trash-alt"></i></a>
         </tr>
     ';
 }

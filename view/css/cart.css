@@ -1,0 +1,100 @@
+body {
+  
+  width: 100%;
+  padding-left: 20px;
+  background: #ffffff;
+}
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  margin: auto;
+  margin-top: 120px;
+}
+#form1 {
+
+  box-shadow: 10px 10px 15px 2px #ccc;
+  border-bottom: 10px;
+  width: 415px;
+  margin: 0 0px 20px 100px;
+  padding: 10px 40px;
+  border: 1px solid black;
+}
+
+#form1 .txt {
+  width: 400px;
+  padding: 6px;
+  border: none;
+}
+
+#form1 fieldset {
+  border: none;
+}
+#form1 .border-bottom {
+  border-bottom: 2px solid #d9d9d9;
+}
+
+.button {
+  margin-left: 50px;
+  width: 315px;
+  height: 50px;
+  border-radius: 3px;
+  background-color: #162f45;
+  color: white;
+  font-weight: bold;
+  font-size: 15px;
+}
+#fs1 input {
+  padding: 1000px;
+}
+#form1 #baoloi {
+  margin: 0px auto;
+  color: red;
+}
+
+#form1 #baoloi {
+  margin: 0px auto;
+  color: red;
+}
+
+#form1 .loi {
+  color: rgb(234, 10, 10);
+}
+.spgiohang {
+  height: 50px;
+  width: 50px;
+}
+input.name {
+  width: 245px;
+  height: 20px;
+}
+#sanpham {
+  display: flex;
+  justify-content: space-between;
+}
+.itemsp {
+  display: flex;
+}
+.spgiohang {
+  margin-top: 50px;
+}
+.itemgia {
+  margin-top: 50px;
+}
+.apma {
+  border: 0px;
+  width: 100px;
+  height: 30px;
+  margin-left: 20px;
+}
+.magiamgia {
+  margin: 4px;
+}
+.tdh {
+  display: flex;
+  justify-content: space-between;
+}
+.giadh {
+  margin-top: 20px;
+}

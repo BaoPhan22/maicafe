@@ -38,7 +38,8 @@
     </div>
     <div class="form-group">
         <!-- <label for="ngayNhap">Ngày nhập</label> -->
-        <input type="date" class="form-control" name="ngaynhap" id="ngayNhap">
+        <input type="date" class="form-control" name="ngaynhap" id="ngayNhap" value="<?php $today = date("Y-m-d");
+                                                                                        echo $today; ?>">
     </div>
     <div class="button">
         <input type="submit" name="themmoisanpham" class="btn btn-primary" value="Thêm mới">

@@ -1,6 +1,9 @@
 :root {
   --menu-width: 220px;
 }
+body {
+  padding-left: var(--menu-width);
+}
 * {
   margin: 0;
   padding: 0;
@@ -23,7 +26,7 @@ nav a {
 }
 
 .container {
-  margin-left: var(--menu-width);
+  margin-left: 0;
   width: 1024px;
 }
 nav ul li {
@@ -41,17 +44,17 @@ nav ul li:hover .sub-menu {
   display: none;
   list-style: none;
 }
-nav ul li .sub-menu li:hover .sub-sub-menu{
-    display: block;
-  }
+nav ul li .sub-menu li:hover .sub-sub-menu {
+  display: block;
+}
 .sub-sub-menu {
-    position: absolute;
-    width: 200px;
-    top: 0;
-    left: 190px;
-    background-color: black;
-    display: none;
-    list-style: none;
+  position: absolute;
+  width: 200px;
+  top: 0;
+  left: 190px;
+  background-color: black;
+  display: none;
+  list-style: none;
 }
 nav h3 {
   color: antiquewhite;
@@ -62,7 +65,7 @@ nav h3 {
 nav > ul > li > a {
   position: relative;
 }
- span {
+span {
   position: absolute;
   top: 50;
   right: 10px;
@@ -76,8 +79,8 @@ a:hover > span {
   transform: rotate(-90deg);
 }
 .w50-inline {
-    width: 45%;
-    display: inline-block;
+  width: 45%;
+  display: inline-block;
 }
 .active {
   background: gray;

@@ -16,8 +16,14 @@ if (isset($_GET['act']) && ($_GET['act'] != '')) {
             break;
             default:
             include 'body.php';
+        case 'cart':
+            include 'cart.html';
+            break;
+        case 'product':
+            include 'product.html';
+            break;
     }
 } else {
     include 'body.php';
 }
-include 'footer.php';
+// include 'footer.php';

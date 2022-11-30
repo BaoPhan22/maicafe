@@ -21,13 +21,13 @@
             <div id="menu">
                 <div class="item"><a href="index.php">TRANG CHỦ</a></div>
                 <div class="item"><a href="index.php?act=about">GIỚI THIỆU</a></div>
-                <div class="item"><a href="">SẢN PHẨM</a></div>
+                <div class="item"><a href="index.php?act=product">SẢN PHẨM</a></div>
                 <div class="item"><a href="index.php?act=dangnhap">ĐĂNG NHẬP</a></div>
                 <div class="item"><a href="index.php?act=dangky">ĐĂNG KÝ</a></div>
             </div>
             <div id="action">
                 <div class="item"><a href=""><i class="fa-solid fa-user"></i></a></div>
-                <div class="item"><a href=""><i class="fa-solid fa-cart-shopping"></i></a></div>
+                <div class="item"><a href="index.php?act=cart"><i class="fa-solid fa-cart-shopping"></i></a></div>
                 <div class="item"><a href=""><i class="fa-solid fa-magnifying-glass"></i></a></div>
             </div>
         </div>

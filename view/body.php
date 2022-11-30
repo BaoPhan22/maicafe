@@ -1,8 +1,12 @@
 
+<<<<<<< HEAD
 <link rel="stylesheet" href="css/body.css">
 
 
     <div id="wrapper">
+=======
+<div id="wrapper">
+>>>>>>> 0c6f3e47720de85f30689a19d5477c4367d42fe1
         <div id="banner">
             <div class="box-left">
                 <h2>
@@ -100,4 +104,8 @@
             </div>
         </div>
     </div>
+<<<<<<< HEAD
     <script src="script.js"></script>
+=======
+    <script src="script.js"></script>
+>>>>>>> 0c6f3e47720de85f30689a19d5477c4367d42fe1
