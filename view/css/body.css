@@ -9,7 +9,7 @@
 #wrapper {
     /* Kích thước màn hình là 1280 x 720 */
     width: 100%;
-    height: 100vh;
+    /* min-height: 100px; */
 }
 
 #banner {
@@ -63,7 +63,7 @@
 }
 .text-line {
     display: flex;
-    margin-left: 180px;
+    margin-left: 315px;
 }
 .text-line .gach {
     width: 150px;
@@ -266,19 +266,24 @@
     width: 100%;
     height: auto;
     border-radius: 10px 10px 0 0;
-    display: block;
-    
+    display: block; 
 }
-#body-comment img:hover{
+#comment-left:hover {
+    width: 50%;
+    margin: 10px; 
     transform: scale(1.05);
 }
 #comment-left {
+    width: 49%;
+    margin: 10px; 
+}
+#comment-right:hover {
     width: 50%;
-    margin: 10px;
-   
+    margin: 10px; 
+    transform: scale(1.05);
 }
 #comment-right {
-    width: 50%;
+    width: 49%;
     margin: 10px;
 }
 .text-comment {

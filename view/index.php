@@ -14,8 +14,10 @@ if (isset($_GET['act']) && ($_GET['act'] != '')) {
         case 'dangky':
             include 'dangky.html';
             break;
+            default:
+            include 'body.php';
     }
 } else {
-    include 'body.html';
+    include 'body.php';
 }
 include 'footer.php';

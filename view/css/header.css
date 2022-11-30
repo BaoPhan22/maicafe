@@ -3,6 +3,7 @@
 body {
     margin: 0;
     font-family: 'Open Sans', 'sans-serif';
+    height: 100%;
 }
 
 /* chia layout */
@@ -30,10 +31,7 @@ body {
     min-height: 200px;
 }
 
-.footer {
-    background-color: rgb(37, 46, 77);
-    min-height: 200px;
-}
+
 
 .boxcenter {
     width: 100%;
@@ -44,7 +42,7 @@ body {
 }
 
 .boxcenter a img {
-    width: 100px;
+    width: 170px;
     padding-left: 80px;
     float: right;
     transition: calc(0.4s);
