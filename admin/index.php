@@ -2,6 +2,7 @@
 include '../model/pdo.php';
 include '../model/danhmuc.php';
 include '../model/sanpham.php';
+include '../model/khachhang.php';
 include 'header.php';
 if (isset($_GET['act']) && ($_GET['act'] != '')) {
     switch ($_GET['act']) {
@@ -73,7 +74,8 @@ if (isset($_GET['act']) && ($_GET['act'] != '')) {
             echo '<h1>Quản lí bình luận</h1>';
             break;
         case 'qlkhachhang':
-            echo '<h1>Quản lí khách hàng</h1>';
+            $kh = getAllCustomer();
+            include 'khachhang/list.php';
             break;
         case 'thongke':
             echo '<h1>Thống kê</h1>';
