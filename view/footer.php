@@ -20,7 +20,7 @@
                 </div>
             </div>
             <div class="top-footer3">
-                <img src="/image/z3880853938551_7f3f4810ed29249ebddc1aac911146fe_preview_rev_1_preview_rev_1.png" alt="">
+                <a href=""><img src="image/logo.png" alt=""></a>
             </div>
         </div>
         <div id="bottom-footer">
