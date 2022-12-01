@@ -1,8 +1,7 @@
 body {
 
   width: 100%;
-  padding-left: 20px;
-  background: #ffffff;
+  background: #E0E7F5;
 }
 
 .container {
@@ -22,6 +21,7 @@ body {
   width: 415px;
   margin: 0 0px 20px 100px;
   padding: 10px 40px;
+  background-color: #ffffff;
 }
 
 #form1 h1 {
