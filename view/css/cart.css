@@ -1,17 +1,19 @@
 body {
-  
+
   width: 100%;
-  padding-left: 20px;
-  background: #ffffff;
+  background: #E0E7F5;
 }
+
 .container {
   display: flex;
   align-items: center;
   justify-content: flex-start;
   width: 100%;
   margin: auto;
-  margin-top: 120px;
+  padding-top: 300px;
+  padding-bottom: 150px;
 }
+
 #form1 {
 
   box-shadow: 10px 10px 15px 2px #ccc;
@@ -19,18 +21,29 @@ body {
   width: 415px;
   margin: 0 0px 20px 100px;
   padding: 10px 40px;
-  border: 1px solid black;
+  background-color: #ffffff;
+}
+
+#form1 h1 {
+  font-weight: 900;
+  color: #162F45
 }
 
 #form1 .txt {
   width: 400px;
   padding: 6px;
   border: none;
+  outline: none;
+}
+
+#form1 .txt:hover {
+  background-color: #f5f5f5;
 }
 
 #form1 fieldset {
   border: none;
 }
+
 #form1 .border-bottom {
   border-bottom: 2px solid #d9d9d9;
 }
@@ -45,9 +58,17 @@ body {
   font-weight: bold;
   font-size: 15px;
 }
+
+.button:hover {
+  filter: opacity(60%);
+  transition: 0.4s;
+  border: none
+}
+
 #fs1 input {
   padding: 1000px;
 }
+
 #form1 #baoloi {
   margin: 0px auto;
   color: red;
@@ -61,40 +82,91 @@ body {
 #form1 .loi {
   color: rgb(234, 10, 10);
 }
+
 .spgiohang {
   height: 50px;
   width: 50px;
 }
-input.name {
+
+input .name {
   width: 245px;
   height: 20px;
 }
+
 #sanpham {
   display: flex;
   justify-content: space-between;
 }
+
 .itemsp {
   display: flex;
 }
+
+.itemsp h5 {
+  color: #162F45
+}
+
+.itemsp .tensp {
+  color: #162F45;
+  font-weight: 600;
+}
+
 .spgiohang {
   margin-top: 50px;
 }
+
 .itemgia {
   margin-top: 50px;
 }
+
 .apma {
   border: 0px;
   width: 100px;
   height: 30px;
   margin-left: 20px;
 }
+
 .magiamgia {
   margin: 4px;
 }
+
+.magiamgia .name {
+  height: 20px;
+  outline: none;
+  border-top: 1px;
+  border-left: 1px;
+  border-right: 1px;
+  padding-left: 15px
+}
+
+.magiamgia .name:hover {
+  background-color: #f5f5f5;
+}
+
+.magiamgia button {
+  height: 35px;
+  background-color: #162f45;
+  color: #f5f5f5
+}
+
+.magiamgia button:hover {
+  filter: opacity(80%)
+}
+
+.magiamgia h4 {
+  color: #162F45;
+  font-weight: 600;
+}
+
 .tdh {
   display: flex;
   justify-content: space-between;
 }
+
+.tdh h4 {
+  color: rgb(162, 18, 47)
+}
+
 .giadh {
   margin-top: 20px;
 }

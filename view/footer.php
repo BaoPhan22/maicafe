@@ -2,21 +2,25 @@
 <!-- <link rel="stylesheet" href="css/footer.css"> -->
 
 <div class="row footer">
-    <div id="top-footer">
-        <div class="top-footer">
-            <h1>LIÊN HỆ</h1>
-            <p>Hotline: +84392262423</p>
-            <p>Địa chỉ: Đ. số 3, Tân Hưng Thuận, Quận 12, TP.HCM</p>
-            <a href=""><i class="fa-brands fa-facebook"></i></a>
-            <a href=""><i class="fa-brands fa-instagram"></i></a>
-        </div>
-        <div class="top-footer2">
-            <h1>LIÊN KẾT</h1>
-            <div class="footer-lienket">
-                <a href="">Trang chủ</a>
-                <a href="">Giới thiệu</a>
-                <a href="">Sản phẩm</a>
-                <a href="">Liên hệ</a>
+        <div id="top-footer">
+            <div class="top-footer">
+                <h1>LIÊN HỆ</h1>
+                <p>Hotline: +84392262423</p>
+                <p>Địa chỉ: Đ. số 3, Tân Hưng Thuận, Quận 12, TP.HCM</p>
+                <a href=""><i class="fa-brands fa-facebook"></i></a>
+                <a href=""><i class="fa-brands fa-instagram"></i></a>
+            </div>
+            <div class="top-footer2">
+                <h1>LIÊN KẾT</h1>
+                <div class="footer-lienket">
+                    <a href="">Trang chủ</a>
+                    <a href="">Giới thiệu</a>
+                    <a href="">Sản phẩm</a>
+                    <a href="">Liên hệ</a>
+                </div>
+            </div>
+            <div class="top-footer3">
+                <a href=""><img src="image/logo.png" alt=""></a>
             </div>
         </div>
         <div class="top-footer3">

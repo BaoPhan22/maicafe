@@ -5,46 +5,48 @@
     bottom: 0;
     justify-content: end; */
 }
+
 #top-footer {
-  padding: 10px 50px;
-  display: flex;
-  text-align: center;
+    padding: 25px 50px;
+    display: flex;
+    text-align: center;
 }
 
 .top-footer {
-  width: 35%;
-  color: white;
-  text-align: left;
-  padding-left: 1%;
+    width: 35%;
+    color: white;
+    text-align: left;
+    padding-left: 5%;
 }
 
 .top-footer h1 {
-  font-size: 40px;
-  font-weight: 900;
+    font-size: 40px;
+    font-weight: 900;
+    padding-bottom: 10px;
 }
 
 .top-footer2 h1 {
-  font-size: 40px;
-  font-weight: 900;
+    padding-bottom: 10px;
+    font-size: 40px;
+    font-weight: 900;
 }
 
 .top-footer2 {
-  width: 35%;
-  color: white;
-  text-align: left;
-  padding-left: 18%;
+    width: 35%;
+    color: white;
+    text-align: left;
+    padding-left: 9%;
 }
 
 .top-footer3 {
-  width: 35%;
-  color: white;
-  text-align: left;
-  padding-left: 10%;
+    width: 35%;
+    color: white;
+    text-align: left;
+    padding-left: 6%;
 }
 
 .top-footer3 img {
-  width: 70%;
-  padding-top: 50px;
+    width: 50%;
 }
 
 .top-footer a {
@@ -52,6 +54,14 @@
   padding-right: 20px;
   font-size: 23px;
   transition: calc(0.4s);
+}
+
+.top-footer a i {
+    padding-top: 13px;
+}
+
+.top-footer p {
+    padding-bottom: 7px;
 }
 
 .top-footer a:hover {
@@ -70,6 +80,7 @@
   text-align: center;
   padding-bottom: 10px;
 }
+
 
 .footer-lienket a {
   text-decoration: none;

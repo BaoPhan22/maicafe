@@ -23,6 +23,7 @@ body {
   width: 400px;
   padding: 6px;
   border: none;
+  outline: none;
 }
 
 #form1 fieldset {

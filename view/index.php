@@ -15,7 +15,7 @@ if (isset($_GET['act']) && ($_GET['act'] != '')) {
             include 'dangky.html';
             break;
         case 'cart':
-            include 'cart.html';
+            include 'cart.php';
             break;
         case 'product':
             include 'product.php';
@@ -26,4 +26,4 @@ if (isset($_GET['act']) && ($_GET['act'] != '')) {
 } else {
     include 'body.php';
 }
-// include 'footer.php';
+include 'footer.php';
