@@ -49,7 +49,8 @@
                 </p>
             </div>
             <div class="img-about">
-                <span><img src="img/z3892244598268_ac03e86f55b64b3a396bbefc7e3bd5ab.jpg" alt=""></span>
+                <div class="img"><img src="image/nhamay.jpg" alt=""></div>
+                <span class="img"><img src="image/product1.jpg" alt=""></span>
             </div>
         </div>
         <div id="cot-title-contact">
