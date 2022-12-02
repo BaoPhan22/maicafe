@@ -2,7 +2,10 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+<<<<<<< HEAD
     
+=======
+>>>>>>> 4d3d09e8b92ca8ccad8a20323ac50ec87bc4d2e1
     cursor: pointer;
 }
 #wp-products-new {
@@ -24,6 +27,7 @@
     display: flex;
     list-style: none;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 #list-products-new .item {
     width: 260px;

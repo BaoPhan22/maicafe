@@ -3,6 +3,7 @@
 body {
     margin: 0;
     font-family: 'Open Sans', 'sans-serif';
+    height: 100%;
 }
 
 /* chia layout */
@@ -30,10 +31,7 @@ body {
     min-height: 200px;
 }
 
-.footer {
-    background-color: rgb(37, 46, 77);
-    min-height: 200px;
-}
+
 
 .boxcenter {
     width: 100%;
@@ -44,7 +42,7 @@ body {
 }
 
 .boxcenter a img {
-    width: 100px;
+    width: 170px;
     padding-left: 80px;
     float: right;
     transition: calc(0.4s);
@@ -68,13 +66,13 @@ body {
     text-decoration: none;
     font-weight: 900;
     font-size: 16px;
-    transition: calc(0.4s);
+    transition: 0.4s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
 #menu .item:hover a {
-    color: #8B4513;
+    color: #ffffff;
     font-weight: 900;
-    border-bottom: 5px solid #8B4513;
+    border-bottom: 4px solid #ffffff;
     padding-bottom: 10px;
 }
 
@@ -94,13 +92,13 @@ body {
     text-decoration: none;
     font-weight: 900;
     font-size: 21px;
-    transition: calc(0.4s);
+    transition: 0.4s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
 #action .item:hover a {
-    color: #8B4513;
+    color: #ffffff;
     font-weight: 900;
-    border-bottom: 5px solid #8B4513;
+    border-bottom: 4px solid #ffffff;
     padding-bottom: 10px;
 }
 

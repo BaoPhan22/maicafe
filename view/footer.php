@@ -1,4 +1,6 @@
 <!-- START FOOTER -->
+<!-- <link rel="stylesheet" href="css/footer.css"> -->
+
 <div class="row footer">
         <div id="top-footer">
             <div class="top-footer">
@@ -18,25 +20,29 @@
                 </div>
             </div>
             <div class="top-footer3">
-                <img src="/img/z3880853938551_7f3f4810ed29249ebddc1aac911146fe_preview_rev_1_preview_rev_1.png" alt="">
+                <a href=""><img src="image/logo.png" alt=""></a>
             </div>
         </div>
-        <div id="bottom-footer">
-            <div class="bottom-footer">
-                <h3>MÁI CÀ PHÊ - VÌ CHÚNG TÔI HIỂU BẠN
-                </h3>
-            </div>
-            <div class="bottom-footer">
-                <h3>@ 2022 HEY COFFEE CO
-                </h3>
-            </div>
-            <div class="bottom-footer">
-                <h3> WEBSITE ĐƯỢC THIẾT KẾ BỞI TEAM MÁI CÀ PHÊ
-                </h3>
-            </div>
+        <div class="top-footer3">
+            <img src="/image/z3880853938551_7f3f4810ed29249ebddc1aac911146fe_preview_rev_1_preview_rev_1.png" alt="">
         </div>
     </div>
-    <!-- END FOOTER -->
+    <div id="bottom-footer">
+        <div class="bottom-footer">
+            <h3>MÁI CÀ PHÊ - VÌ CHÚNG TÔI HIỂU BẠN
+            </h3>
+        </div>
+        <div class="bottom-footer">
+            <h3>@ 2022 HEY COFFEE CO
+            </h3>
+        </div>
+        <div class="bottom-footer">
+            <h3> WEBSITE ĐƯỢC THIẾT KẾ BỞI TEAM MÁI CÀ PHÊ
+            </h3>
+        </div>
+    </div>
+</div>
+<!-- END FOOTER -->
 </body>
 
 </html>
