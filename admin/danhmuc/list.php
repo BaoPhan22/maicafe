@@ -1,5 +1,5 @@
 <?php
-echo '<table class="container">
+echo '<table class="container table">
     <tr>
         <th>MÃ LOẠI</th>
         <th>TÊN LOẠI</th>

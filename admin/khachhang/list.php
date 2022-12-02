@@ -1,4 +1,4 @@
-<table border="1">
+<table class="table">
     <tr>
         <th>MÃ KHÁCH HÀNG</th>
         <th>HỌ TÊN</th>

@@ -1,12 +1,13 @@
 .footer {
-    background-color: rgb(37, 46, 77);
-    min-height: 200px;
-    /* position: absolute;
+  background-color: rgb(37, 46, 77);
+  min-height: 200px;
+  /* position: absolute;
     bottom: 0;
     justify-content: end; */
 }
+
 #top-footer {
-    padding: 10px 50px;
+    padding: 25px 50px;
     display: flex;
     text-align: center;
 }
@@ -15,15 +16,17 @@
     width: 35%;
     color: white;
     text-align: left;
-    padding-left: 1%;
+    padding-left: 5%;
 }
 
 .top-footer h1 {
     font-size: 40px;
     font-weight: 900;
+    padding-bottom: 10px;
 }
 
 .top-footer2 h1 {
+    padding-bottom: 10px;
     font-size: 40px;
     font-weight: 900;
 }
@@ -32,55 +35,62 @@
     width: 35%;
     color: white;
     text-align: left;
-    padding-left: 18%;
+    padding-left: 9%;
 }
 
 .top-footer3 {
     width: 35%;
     color: white;
     text-align: left;
-    padding-left: 10%;
+    padding-left: 6%;
 }
 
 .top-footer3 img {
-    width: 70%;
-    padding-top: 50px;
-
+    width: 50%;
 }
 
 .top-footer a {
-    color: aliceblue;
-    padding-right: 20px;
-    font-size: 23px;
-    transition: calc(0.4s);
+  color: aliceblue;
+  padding-right: 20px;
+  font-size: 23px;
+  transition: calc(0.4s);
+}
+
+.top-footer a i {
+    padding-top: 13px;
+}
+
+.top-footer p {
+    padding-bottom: 7px;
 }
 
 .top-footer a:hover {
-    color: rgb(249, 198, 31)
+  color: rgb(249, 198, 31);
 }
 
 #bottom-footer {
-    padding: 10px 50px;
-    display: flex;
-    text-align: center;
+  padding: 10px 50px;
+  display: flex;
+  text-align: center;
 }
 
 .bottom-footer {
-    width: 33%;
-    color: white;
-    text-align: center;
-    padding-bottom: 10px;
+  width: 33%;
+  color: white;
+  text-align: center;
+  padding-bottom: 10px;
 }
 
+
 .footer-lienket a {
-    text-decoration: none;
-    color: aliceblue;
-    display: block;
-    padding-bottom: 10px;
+  text-decoration: none;
+  color: aliceblue;
+  display: block;
+  padding-bottom: 10px;
 }
 
 .footer-lienket a:hover {
-    color: rgb(249, 198, 31);
-    transition: 0.9s;
-    border-bottom: 1px solid rgb(249, 198, 31);
+  color: rgb(249, 198, 31);
+  transition: 0.9s;
+  border-bottom: 1px solid rgb(249, 198, 31);
 }

@@ -7,7 +7,7 @@ if (isset($_GET['idcata']) && ($_GET['idcata'] > 0)) {
 else {
     $arr = showAllProduct('',0);
 }
-echo '<table class="container">
+echo '<table class="container table">
     <tr>
         <th>MÃ SẢN PHẨM</th>
         <th>LOẠI HÀNG</th>
