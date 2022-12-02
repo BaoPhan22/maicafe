@@ -26,6 +26,17 @@ if (isset($_GET['act']) && ($_GET['act'] != '')) {
             $dssp = showAllProduct('',0);
             include 'product.php';
             break;
+        case 'productdetail':
+            if (isset($_GET['idsp']) && ($_GET['idsp'] > 0)) {
+                $sql = "SELECT * FROM sanpham WHERE id=" . $_GET['idsp'];
+                $sp = pdo_query_one($sql);
+                extract($sp);
+                // $spcl = loadSPcungloai($id, $the_loai);
+                include 'productdetail.php';
+            } else {
+                include 'body.php';
+            }
+            break;
         default:
             include 'body.php';
     }

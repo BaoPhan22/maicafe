@@ -16,13 +16,13 @@
                     </div>
                     <button class="hang" name="hang">Còn hàng</button>
                 </div>
-                <button class="name">Xem thêm</button>
+                <a class="name btn btn-primary" href="index.php?act=productdetail&idsp='.$id.'">Xem thêm</a>
             </div>
             ';
         }
         ?>
 
-        <div class="item">
+        <!-- <div class="item">
             <img src="./image/sp3.jpg" alt="">
             <div class="infor">
                 <div class="infor-column">
@@ -54,7 +54,7 @@
                 <button class="hang" name="hang">Còn hàng</button>
             </div>
             <button class="name">Xem thêm</button>
-        </div>
+        </div> -->
     </ul>
     <div id="list-page-new">
         <div class="item">
