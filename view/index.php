@@ -1,4 +1,9 @@
 <?php
+include '../model/sanpham.php';
+include '../model/danhmuc.php';
+include '../model/pdo.php';
+include '../model/khachhang.php';
+
 include 'header.php';
 if (isset($_GET['act']) && ($_GET['act'] != '')) {
     switch ($_GET['act']) {
@@ -18,6 +23,7 @@ if (isset($_GET['act']) && ($_GET['act'] != '')) {
             include 'cart.php';
             break;
         case 'product':
+            $dssp = showAllProduct('',0);
             include 'product.php';
             break;
         default:

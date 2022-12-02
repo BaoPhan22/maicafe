@@ -3,17 +3,25 @@
 <div id="wp-products-new">
     <h2>SẢN PHẨM MỚI NHẤT</h2>
     <ul id="list-products-new">
-        <div class="item">
-            <img src="./image/sp5.jpg" alt="">
-            <div class="infor">
-                <div class="infor-column">
-                    <p>Cà phê Chocolate</p>
-                    <p>Giá: 250.000 VNĐ</p>
+        <?php
+        foreach ($dssp as $row) {
+            extract($row);
+            echo '
+            <div class="item">
+                <img src="../uploads/hanghoa/'.$hinh_anh.'" alt="">
+                <div class="infor">
+                    <div class="infor-column">
+                        <p>'.$ten_san_pham.'</p>
+                        <p>Giá: '.$don_gia.' VNĐ</p>
+                    </div>
+                    <button class="hang" name="hang">Còn hàng</button>
                 </div>
-                <button class="hang" name="hang">Còn hàng</button>
+                <button class="name">Xem thêm</button>
             </div>
-            <button class="name">Xem thêm</button>
-        </div>
+            ';
+        }
+        ?>
+
         <div class="item">
             <img src="./image/sp3.jpg" alt="">
             <div class="infor">
