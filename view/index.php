@@ -16,7 +16,10 @@ if (isset($_GET['act']) && ($_GET['act'] != '')) {
             break;
         case 'cart':
             include 'cart.html';
-        break;
+            break;
+        case 'product':
+            include 'product.html';
+            break;
     }
 } else {
     include 'body.html';
