@@ -8,14 +8,15 @@ body {
     background: #ffffff;
 }
 .container {
+    
     width: 100%;
-    margin: auto;
+    
 }
 #form1 {
     box-shadow: 10px 10px 15px 2px #ccc;
     border-bottom: 10px;
     width: 415px;
-    margin: auto;
+    margin-top: 400px;
     padding: 10px 40px;
     margin-bottom: 20px;
     

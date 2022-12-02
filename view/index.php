@@ -20,6 +20,7 @@ if (isset($_GET['act']) && ($_GET['act'] != '')) {
             include 'dangky.html';
             break;
         case 'cart':
+<<<<<<< HEAD
             include 'cart.php';
             break;
         case 'product':
@@ -28,6 +29,13 @@ if (isset($_GET['act']) && ($_GET['act'] != '')) {
             break;
         default:
             include 'body.php';
+=======
+            include 'cart.html';
+            break;
+        case 'product':
+            include 'product.html';
+            break;
+>>>>>>> dfa12f5abc84f58c1689c0be812460b329c88ace
     }
 } else {
     include 'body.php';
