@@ -2,10 +2,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-<<<<<<< HEAD
     
-=======
->>>>>>> 4d3d09e8b92ca8ccad8a20323ac50ec87bc4d2e1
     cursor: pointer;
 }
 #wp-products-new {
@@ -26,11 +23,14 @@
 #list-products-new {
     display: flex;
     list-style: none;
-    justify-content: space-between;
+    /* margin-left: 15px; */
+    margin-left: 150px;
     flex-wrap: wrap;
+    flex-basis: 25%;
 }
 #list-products-new .item {
     width: 260px;
+    margin-right: 45px;
     background-color: #ffff;
     border-radius: 10px 10px;
     margin-bottom: 50px;
@@ -92,6 +92,7 @@
     border-radius: 0 0 10px 10px;
     border: 0;
 }
+#list-products-new .item .name:hover{transition: 0.8s cubic-bezier(0.075, 0.82, 0.165, 1);background-color:#8f6128;}
 #list-page-new {
     width: 50%;
     margin: 0px auto;

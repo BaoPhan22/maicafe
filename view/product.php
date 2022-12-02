@@ -22,7 +22,7 @@
         }
         ?>
 
-        <div class="item">
+        <!-- <div class="item">
             <img src="./image/sp3.jpg" alt="">
             <div class="infor">
                 <div class="infor-column">
@@ -69,7 +69,7 @@
         <div class="item">
             <a href="">4</a>
         </div>
-    </div>
+    </div> -->
 </div>
 <div id="wp-products-seller">
     <h2>SẢN PHẨM BÁN CHẠY</h2>
