@@ -8,8 +8,9 @@
 #wp-products-new {
     padding-top: 40px;
     padding-right: 100px;
-    padding-left: 100px;
+    padding-left: 50px;
     padding-bottom: 78px;
+    /* padding: auto; */
     background-color: #f3d077;
 }
 #wp-products-new h2{
@@ -29,16 +30,16 @@
     flex-basis: 25%;
 }
 #list-products-new .item {
-    width: 260px;
-    margin-right: 45px;
+    width: 300px;
+    margin-right: 65px;
     background-color: #ffff;
     border-radius: 10px 10px;
     margin-bottom: 50px;
     box-shadow: 1px 1px 5px 1px rgb(134, 134, 134);
 }
 #list-products-new .item>img {
-    width: 260px;
-    height: 250px;
+    /* width: 260px; */
+    /* height: 250px; */
     border-radius: 10px 10px 0 0;
 }
 #list-products-new .item img{

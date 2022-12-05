@@ -13,17 +13,63 @@ if (isset($_GET['act']) && ($_GET['act'] != '')) {
         case 'contact':
             include 'contact.php';
             break;
-        case 'dangnhap':
-            include 'dangnhap.html';
-            break;
         case 'dangky':
-            include 'dangky.html';
+            createNewAccount();
+            include 'dangky.php';
             break;
         case 'cart':
             include 'cart.php';
             break;
+        case 'dangnhap':
+            if (isset($_POST['btn-login'])&&($_POST['btn-login'])) {
+                $username = $_POST['tendangnhap'];
+                $password = $_POST['matkhau'];
+                $checkuser = logIn($username,$password);
+                if (is_array($checkuser)) {
+                    $_SESSION['user'] = $checkuser;
+                    header('location: index.php');
+                } else {
+                    $thongbao = "Tài khoản không tồn tại!";
+                }
+            }
+            include 'login.php';
+            break;
+        case 'logout':
+            session_destroy();
+            header('location: index.php');
+        case 'profile':
+            // $kh = getAllCustomer();
+            include 'profile.php';
+            break;
+        case 'editprofile':
+            if (isset($_GET['iduser']) && $_GET['iduser'] > 0) {
+                $sql = "SELECT * FROM khachhang WHERE id=" . $_GET['iduser'];
+                $kh = pdo_query_one($sql);
+            }
+            include 'editprofile.php';
+            break;
+        case 'updateprofile':
+            updateProfile();
+            header('location: index.php?act=profile');
+            break;
+        case 'changepassword':
+            if (isset($_GET['iduser']) && $_GET['iduser'] > 0) {
+                $sql = "SELECT * FROM khachhang WHERE id=" . $_GET['iduser'];
+                $kh = pdo_query_one($sql);
+            }
+            include 'changepassword.php';
+            break;
+        case 'updatepassword':
+            if (isset($_POST['doimatkhau'])&&($_POST['doimatkhau'])) {
+                $matkhaucu = $_POST['matkhaucu'];
+                $matkhaumoi = $_POST['matkhaumoi'];
+                $nhaplaimatkhaumoi = $_POST['matkhaucu'];
+                $sql = 'UPDATE khachhang SET `mat_khau` = "'.$matkhaumoi.'" WHERE `mat_khau` = "'.$matkhaucu.'"';
+                pdo_query($sql);
+            }
+            break;
         case 'product':
-            $dssp = showAllProduct('',0);
+            $dssp = showAllProduct('', 0);
             include 'product.php';
             break;
         case 'productdetail':
