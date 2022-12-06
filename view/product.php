@@ -8,7 +8,7 @@
             extract($row);
             echo '
             <div class="item">
-                <img src="../uploads/hanghoa/'.$hinh_anh.'" alt="">
+                <img src="../uploads/hanghoa/'.$hinh_anh.'" alt="" width="100%" height="300">
                 <div class="infor">
                     <div class="infor-column">
                         <p>'.$ten_san_pham.'</p>

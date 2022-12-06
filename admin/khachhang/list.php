@@ -1,6 +1,5 @@
 <table class="table">
     <tr>
-        <th>MÃ KHÁCH HÀNG</th>
         <th>HỌ TÊN</th>
         <th>TÀI KHOẢN</th>
         <th>EMAIL</th>
@@ -14,7 +13,6 @@
         extract($row);
         echo '
             <tr>
-                <td>'.$id.'</td>
                 <td>'.$ho_ten.'</td>
                 <td>'.$tai_khoan.'</td>
                 <td>'.$email.'</td>

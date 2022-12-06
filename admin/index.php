@@ -56,7 +56,6 @@ if (isset($_GET['act']) && ($_GET['act'] != '')) {
             include 'sanpham/list.php';
             break;
         case 'suasp':
-            
             if (isset($_GET['id']) && $_GET['id'] > 0) {
                 $sql = "SELECT * FROM sanpham WHERE id=" . $_GET['id'];
                 $sp = pdo_query_one($sql);
