@@ -24,6 +24,8 @@
     width: 350px;
     height: auto;
     margin-top: -190px;
+    border-radius: 20px;
+    box-shadow: 0px 10px 10px 0px #ccc
 }
 #product-details-left h2 {
     color: #162F45;

@@ -3,21 +3,22 @@
 body {
     margin: 0;
     font-family: 'Open Sans', 'sans-serif';
-    height: 100%;
+    display: table;
 }
 
 /* chia layout */
 .row {
-    float: left;
+    /* float: left; */
     width: 100%;
+    margin: 0;
+    /* display: flex; */
 }
 
 .top {
     min-height: 85px;
-    background-color: #a36f2f;
+    background-color: #a36f2ffe;
     position: fixed;
     top:0;
-    left:0;
     transition: all 0.5s ease-in-out ;
 }
 .content {
@@ -80,6 +81,7 @@ body {
     display: flex;
     margin-right: 50px;
     padding-top: 1 0px;
+    list-style: none;
 }
 
 #action .item {

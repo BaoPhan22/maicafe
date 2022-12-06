@@ -31,6 +31,7 @@
     margin-top: 90px;
     color: #F6C33E;
     line-height: 90px;
+    font-weight: 900;
 }
 
 #banner .box-left p {
@@ -51,6 +52,15 @@
     font-size: 17px;
     border-radius: 20px;
     transition: 0.4s;
+}
+
+#banner .box-left button a {
+    text-decoration: none;
+    color: #fff;
+}
+
+#banner .box-left button:hover a {
+    color: #000;
 }
 
 #banner .box-left button:hover {
