@@ -32,9 +32,6 @@ function showAllProduct($kyw = "", $iddm = 0)
     }
     return pdo_query($sql);
     // echo $sql;
-
-
-    
 }
 function deleteOneProduct()
 {

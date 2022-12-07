@@ -1,7 +1,30 @@
 <link rel="stylesheet" href="css/product.css">
 
 <div id="wp-products-new">
-    <h2>TÁT CẢ SẢN PHẨM</h2>
+<form action="index.php?act=product" method="post" class="w-50 m-auto">
+    <input type="text" name="kywview" placeholder="Tên sản phẩm cần tìm" class="form-control mb-3 w-100">
+    <select class="custom-select mb-3" name="iddm">
+        <option value="">Loại hàng</option>
+        <?php
+        $tendanhmuc = showAllCata();
+
+        foreach ($tendanhmuc as $row) {
+            if ($row['id']==$iddmdachon) {
+                echo '
+                <option selected value="' . $row['id'] . '">' . $row['ten_danh_muc'] . '</option>
+        ';
+            } else {
+                echo '
+                <option value="' . $row['id'] . '">' . $row['ten_danh_muc'] . '</option>
+        ';
+            }
+            
+        }
+        ?>
+    </select>
+    <input type="submit" value="Tìm kiếm" name="listokview" class="btn btn-outline-primary mb-3">
+</form>
+    <h3>TẤT CẢ SẢN PHẨM</h3>
     <ul id="list-products-new">
         <?php
         foreach ($dssp as $row) {
