@@ -8,7 +8,7 @@
             unset($_SESSION['cart']);
             // header('location: index.php?act=product ');
         }
-        if(count($_SESSION['cart'])>0) header('location: index.php?act=cart ');
-        else header('location: index.php?act=product ');
+        if(is_countable($_SESSION['cart'])>0) header('location: index.php?act=cart ');
+        else  header('location: index.php?act=product ');
     }
 ?>

@@ -1,8 +1,8 @@
 
 <?php
-  session_start();
-    if(isset($_SESSION['cart'])){
-        echo var_dump($_SESSION['cart']);
+  // session_start();  
+  if(isset($_SESSION['cart'])){
+  // echo var_dump($_SESSION['cart']);
     
 ?>
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.9/angular.min.js"></script>
