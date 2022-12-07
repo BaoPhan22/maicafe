@@ -32,13 +32,13 @@
         <em ng-if="form1.matkhau.$invalid" class="loi">Xin mời nhập mật khẩu</em>
         <p>
             <label for="">NHẬP LẠI MẬT KHẨU :</label>
-            <input required minlength="2" maxlength="30" ng-model="nlmk" name="nlmk" type="text" id="hoten" class="txt"><br>
+            <input required minlength="2" maxlength="30" ng-model="nlmk" name="nlmk" type="password" id="hoten" class="txt"><br>
 
         </p>
         <em ng-if="form1.nlmk.$invalid" class="loi">Xin mời nhập lại mật khẩu</em>
         <p>
             <label for="">HỌ TÊN :</label><br>
-            <input required minlength="2" maxlength="30" ng-model="hoten" name="hoten" type="text" id="hoten" class="txt"><br>
+            <input required minlength="2" maxlength="30" ng-model="hoten" name="hoten" type="password" id="hoten" class="txt"><br>
 
         </p>
         <em ng-if="form1.hoten.$invalid" class="loi">Nhập họ tên từ 2 đến 30 ký tự</em>
