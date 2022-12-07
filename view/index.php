@@ -16,6 +16,7 @@ if (isset($_GET['act']) && ($_GET['act'] != '')) {
         case 'dangky':
             createNewAccount();
             include 'dangky.php';
+            // header('location: index.php?act=dangnhap');
             break;
         case 'cart':
             include 'cart.php';

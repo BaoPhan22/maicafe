@@ -1,15 +1,6 @@
 <link rel="stylesheet" href="css/dangky.css">
-<!DOCTYPE html>
-<html lang="en">
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.9/angular.min.js"> </script>
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.9/angular.min.js"> </script>
-    <title>bài 4</title>
-    </style>
-</head>
 <body ng-app="b4" ng-controller="ctr1">
 
 
@@ -26,7 +17,7 @@
         <em ng-if="form1.tendangnhap.$invalid" class="loi">Nhập tên đăng nhập</em>
         <p>
             <label for="">MẬT KHẨU :</label>
-            <input required minlength="2" maxlength="30" ng-model="Matkhau" name="matkhau" type="text" id="hoten" class="txt"><br>
+            <input required minlength="2" maxlength="30" ng-model="Matkhau" name="matkhau" type="password" id="hoten" class="txt"><br>
 
         </p>
         <em ng-if="form1.matkhau.$invalid" class="loi">Xin mời nhập mật khẩu</em>
@@ -47,24 +38,25 @@
             <input ng-model="email" type="email" name="email" id="email" class="txt">
         </p>
         <em ng-if="form1.email.$invalid    " class="loi">Nhập đúng gmail</em>
-        
+
         <p>
             <label for="">ĐỊA CHỈ :</label><br>
             <input type="text" name="diachi" class="txt"><br>
-            
+
 
             <em ng-if="form1.tendangnhap.$invalid" class="loi">Nhập địa chỉ </em>
-        <fieldset id="fs1">
+            <!-- <fieldset id="fs1">
     
             <legend>Giới tính</legend>
             <input ng-model="gioitinh" type="radio" name="gioitinh" value="1"><label for="">Nam</label>
             <input ng-model="gioitinh" type="radio" name="gioitinh" value="2"><label for="">Nữ</label><br>
             
-        </fieldset>
+        </fieldset> -->
         </p>
-        <em ng-if="!gioitinh>=1" class="loi">Chọn Giới tính</em>
-        </div>
-        <input class="button" type="submit" value="ĐĂNG KÝ" ng-model="button">
+        <!-- <em ng-if="!gioitinh>=1" class="loi">Chọn Giới tính</em> -->
+        
+        <!-- <button class="button" ng-model="button" type="submit">ĐĂNG KÝ</button> -->
+        <input type="submit" value="Đăng ký" class="button" ng-model='button' name="dangky">
         <br>
     </form>
 
@@ -72,6 +64,6 @@
     <script>
         app = angular.module("b4", []);
         app.controller("ctr1", xuly);
-        function xuly($scope) {
-        }
+
+        function xuly($scope) {}
     </script>
