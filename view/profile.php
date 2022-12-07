@@ -1,6 +1,8 @@
 <?php
 if (!isset($_SESSION['user'])) {
-    echo 'Bạn chưa đăng nhập';
+    echo '<h1>Bạn chưa đăng nhập</h1>
+        <a href="index.php?act=dangnhap">Đăng nhập để tiếp tục</a>
+    ';
 } else {
     extract($_SESSION['user']);
 ?>

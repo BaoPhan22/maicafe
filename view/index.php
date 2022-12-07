@@ -35,9 +35,13 @@ if (isset($_GET['act']) && ($_GET['act'] != '')) {
             }
             include 'login.php';
             break;
+        case 'backtoindex':
+            include 'backtoindex.php';
+            break;
         case 'logout':
             session_destroy();
             header('location: index.php');
+            break;
         case 'profile':
             // $kh = getAllCustomer();
             include 'profile.php';

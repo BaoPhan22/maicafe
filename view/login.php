@@ -1,7 +1,11 @@
 <link rel="stylesheet" href="css/dangnhap.css">
 <?php
 if (isset($_SESSION['user'])) {
-    echo '<h3>Bạn đã đăng nhập</h3>';
+    echo '
+        <form action="index.php">
+            <input type="submit" value="Quay ve trang chu">
+        </form>
+    ';
 } else {
 
 ?>
@@ -29,7 +33,7 @@ if (isset($_SESSION['user'])) {
         <div class="quen">
             <a href="">Quên mật khẩu ?</a>
             <br>
-            <a href="">Tạo tài khoản mới ? </a>
+            <a href="index.php?act=dangky">Tạo tài khoản mới ? </a>
         </div>
 
         <?php if (isset($thongbao) && ($thongbao != '')) echo $thongbao; ?>

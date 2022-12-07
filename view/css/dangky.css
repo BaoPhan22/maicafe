@@ -29,6 +29,7 @@
     padding: 6px;
     border: none;
     outline: none;
+    border-bottom: 2px solid #ccc;
   }
 
 #form1 fieldset {
@@ -42,7 +43,6 @@
     padding-bottom: 20px;
   }
   #form1 p {
-    border-bottom: 2px solid #ccc;
     color: #162F45;
   }
   #form1 p input {
