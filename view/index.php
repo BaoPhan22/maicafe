@@ -70,7 +70,15 @@ if (isset($_GET['act']) && ($_GET['act'] != '')) {
             }
             break;
         case 'product':
-            $dssp = showAllProduct('', 0);
+            if (isset($_POST['listokview']) && ($_POST['listokview'])) {
+                $kywview = $_POST['kywview'];
+                $iddm = $_POST['iddm'];
+                $iddmdachon = $iddm;
+            } else {
+                $kywview = '';
+                $iddm = 0;
+            }
+            $dssp = showAllProduct($kywview, $iddm);
             include 'product.php';
             break;
         case 'productdetail':
