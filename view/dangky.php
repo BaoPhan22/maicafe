@@ -1,5 +1,15 @@
 <link rel="stylesheet" href="css/dangky.css">
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.9/angular.min.js"> </script>
+    <title>bài 4</title>
+    </style>
+</head>
 <body ng-app="b4" ng-controller="ctr1">
 
 
@@ -33,22 +43,26 @@
         </p>
         <em ng-if="form1.hoten.$invalid" class="loi">Nhập họ tên từ 2 đến 30 ký tự</em>
         <p>
-            <label for="">EMAIL :</label><br>
-            <input ng-model="email" type="email" name="email" id="email" class="txt"><br>
-
+            <label for="">Email</label><br>
+            <input ng-model="email" type="email" name="email" id="email" class="txt">
         </p>
         <em ng-if="form1.email.$invalid    " class="loi">Nhập đúng gmail</em>
+        
         <p>
             <label for="">ĐỊA CHỈ :</label><br>
             <input type="text" name="diachi" class="txt"><br>
+            
 
+            <em ng-if="form1.tendangnhap.$invalid" class="loi">Nhập địa chỉ </em>
+        <fieldset id="fs1">
+    
+            <legend>Giới tính</legend>
+            <input ng-model="gioitinh" type="radio" name="gioitinh" value="1"><label for="">Nam</label>
+            <input ng-model="gioitinh" type="radio" name="gioitinh" value="2"><label for="">Nữ</label><br>
+            
+        </fieldset>
         </p>
-        <!-- <fieldset id="fs1"><br>
-            <input ng-model="gioitinh" type="radio" name="gioitinh" value="1"><label for="">NAM</label>
-            <input ng-model="gioitinh" type="radio" name="gioitinh" value="2"><label for="">NỮ</label><br><br>
-            <em ng-if="!gioitinh>=1" class="loi">Chọn Giới tính</em>
-        </fieldset> -->
-        <div name="baoloi" id="baoloi">
+        <em ng-if="!gioitinh>=1" class="loi">Chọn Giới tính</em>
         </div>
         <button class="button" ng-model="button">ĐĂNG KÝ</button>
         <br>
@@ -58,6 +72,6 @@
     <script>
         app = angular.module("b4", []);
         app.controller("ctr1", xuly);
-
-        function xuly($scope) {}
+        function xuly($scope) {
+        }
     </script>

@@ -1,12 +1,35 @@
+<form action="index.php?act=danhsachsanpham" method="post" class="w-50 m-auto">
+    <input type="text" name="kywview" placeholder="Tên sản phẩm cần tìm" class="form-control mb-3 w-100">
+    <select class="custom-select mb-3" name="iddm">
+        <option value="">Loại hàng</option>
+        <?php
+        // include "model/pdo.php";
+        $tendanhmuc = showAllCata();
 
+        foreach ($tendanhmuc as $row) {
+            if ($row['id']==$iddmdachon) {
+                echo '
+                <option selected value="' . $row['id'] . '">' . $row['ten_danh_muc'] . '</option>
+        ';
+            } else {
+                echo '
+                <option value="' . $row['id'] . '">' . $row['ten_danh_muc'] . '</option>
+        ';
+            }
+            
+        }
+        ?>
+    </select>
+    <input type="submit" value="Tìm kiếm" name="listokview" class="btn btn-outline-primary mb-3">
+</form>
 <?php
-if (isset($_GET['idcata']) && ($_GET['idcata'] > 0)) {
-    $idcata = $_GET['idcata'];
-    $arr = showAllProduct("", $idcata);
-}
-else {
-    $arr = showAllProduct('',0);
-}
+// if (isset($_GET['idcata']) && ($_GET['idcata'] > 0)) {
+//     $idcata = $_GET['idcata'];
+//     $arr = showAllProduct("", $idcata);
+// }
+// else {
+//     $arr = showAllProduct('',0);
+// }
 echo '<table class="container table">
     <tr>
         <th>MÃ SẢN PHẨM</th>
@@ -22,16 +45,10 @@ echo '<table class="container table">
     </tr>';
 
 // $tendanhmuc = '';
-foreach ($arr as $row) {
-    $suasp = "index.php?act=suasp&id=" . $row['id'];
-    $xoasp = "index.php?act=deletesp&id=" . $row['id'];
-    extract($row);
-    // if ($id_danh_muc==11)
-    // $tendanhmuc = "Cà phê";
-    // elseif ($id_danh_muc==12)
-    // $tendanhmuc = "Dụng cụ pha cà phê";
-    // else 
-    // $tendanhmuc = 'Ly';
+foreach ($arr as $row1) {
+    $suasp = "index.php?act=suasp&id=" . $row1['id'];
+    $xoasp = "index.php?act=deletesp&id=" . $row1['id'];
+    extract($row1);
     echo '
         <tr>
             <td>' . $id . '</td>

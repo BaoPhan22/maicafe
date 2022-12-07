@@ -15,7 +15,7 @@
             </div>
             <div class="to-bottom">
                 <a href="">
-                    <img src="./image/bottom.png" alt="">
+                    <!-- <img src="image/banner.png" alt="" width="100%"> -->
                 </a>
             </div>
         </div>

@@ -8,8 +8,8 @@ echo '<table class="container table">
     </tr>';
 $arr = showAllCata();
 foreach ($arr as $row) {
-    $suadm = "index.php?act=suadm&id=".$row['id'];
-    $xoadm = "index.php?act=deletedm&id=".$row['id'];
+    $suadm = "index.php?act=suadm&id=" . $row['id'];
+    $xoadm = "index.php?act=deletedm&id=" . $row['id'];
     extract($row);
     echo '
         <tr>

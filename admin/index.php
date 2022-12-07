@@ -40,14 +40,23 @@ if (isset($_GET['act']) && ($_GET['act'] != '')) {
             include 'sanpham/add.php';
             break;
         case 'danhsachsanpham':
+            if (isset($_POST['listokview']) && ($_POST['listokview'])) {
+                $kywview = $_POST['kywview'];
+                $iddm = $_POST['iddm'];
+                $iddmdachon = $iddm;
+            } else {
+                $kywview = '';
+                $iddm = 0;
+            }
+            $arr = showAllProduct($kywview, $iddm);
             include 'sanpham/list.php';
             break;
         case 'deletesp':
             $target_dir = "../uploads/hanghoa/";
-            $sqlchonhinhanhtudb = 'SELECT hinh_anh FROM sanpham WHERE id='.$_GET['id'];
+            $sqlchonhinhanhtudb = 'SELECT hinh_anh FROM sanpham WHERE id=' . $_GET['id'];
             $tenhinhanh = pdo_query_one($sqlchonhinhanhtudb);
             $tenhinhanhbixoa = implode($tenhinhanh);
-            $duongdanhinhanhbixoa=$target_dir.$tenhinhanhbixoa;
+            $duongdanhinhanhbixoa = $target_dir . $tenhinhanhbixoa;
             if (is_file($duongdanhinhanhbixoa)) {
                 unlink($duongdanhinhanhbixoa);
             }

@@ -6,7 +6,7 @@ function addOneProduct()
         $giahh = $_POST['giahh'];
         $theloai = $_POST['theloai'];
         $giamgiahh = 0;
-        if (isset($_POST['giamgiahh']) && ($_POST['giamgiahh']>0))
+        if (isset($_POST['giamgiahh']) && ($_POST['giamgiahh'] > 0))
             $giamgiahh = $_POST['giamgiahh'];
         $sltk = $_POST['sltk'];
         $hinhanhhh = basename($_FILES['hinhanhhh']['name']);
@@ -22,16 +22,22 @@ function addOneProduct()
 }
 function showAllProduct($kyw = "", $iddm = 0)
 {
+    // SELECT * FROM `sanpham` WHERE 1 AND `ten_san_pham` LIKE '%Cà phê%'
     $sql = "SELECT * FROM sanpham WHERE 1";
     if ($kyw != '') {
-        $sql .= " AND `ten_san_pham` like '%" . $kyw . "%'";
+        $sql .= " AND ten_san_pham like '%" . $kyw . "%'";
     }
     if ($iddm > 0) {
         $sql .= " AND id_danh_muc =" . $iddm . "";
     }
     return pdo_query($sql);
+    // echo $sql;
+
+
+    
 }
-function deleteOneProduct() {
+function deleteOneProduct()
+{
     if (isset($_GET['id']) && ($_GET['id'] > 0)) {
         $sql = "DELETE FROM sanpham WHERE id=" . $_GET['id'];
         return pdo_query($sql);
@@ -39,7 +45,8 @@ function deleteOneProduct() {
     // $sql = "SELECT * FROM danhmuc";
     // return pdo_query($sql);
 }
-function updateProDuct() {
+function updateProDuct()
+{
     if (isset($_POST['capnhatsanpham']) && $_POST['capnhatsanpham']) {
         $tenhh = $_POST['tenhh'];
         $giahh = $_POST['giahh'];

@@ -23,6 +23,11 @@ body {
     padding: 0 145px;
     position: relative;
 }
+.to-bottom {
+    position: absolute;
+    left: 0;
+    top: 0;
+}
 
 #banner .box-left {
     width: 50%;

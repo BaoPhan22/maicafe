@@ -4,21 +4,26 @@ function getAllCustomer()
     $sql = "SELECT * FROM khachhang";
     return pdo_query($sql);
 }
-function createNewAccount() {
-    $tendangnhap = $_POST['tendangnhap'];
-    $matkhau = $_POST['matkhau'];
-    $hoten = $_POST['hoten'];
-    $email = $_POST['email'];
-    $diachi = $_POST['diachi'];
-    $sql = 'INSERT INTO khachhang (tai_khoan,mat_khau,ho_ten,email,dia_chi) VALUES ("'.$tendangnhap.'","'.$matkhau.'","'.$hoten.'","'.$email.'","'.$diachi.'")';
-    pdo_query($sql);
+function createNewAccount()
+{
+    if (isset($_POST['dangky']) && ($_POST['dangky'])) {
+        $tendangnhap = $_POST['tendangnhap'];
+        $matkhau = $_POST['matkhau'];
+        $hoten = $_POST['hoten'];
+        $email = $_POST['email'];
+        $diachi = $_POST['diachi'];
+        $sql = 'INSERT INTO khachhang (tai_khoan,mat_khau,ho_ten,email,dia_chi) VALUES ("' . $tendangnhap . '","' . $matkhau . '","' . $hoten . '","' . $email . '","' . $diachi . '")';
+        pdo_query($sql);
+    }
 }
-function logIn($taikhoan,$matkhau) {
-    $sql = "SELECT * FROM khachhang WHERE tai_khoan = '".$taikhoan."' AND mat_khau = '".$matkhau."'";
+function logIn($taikhoan, $matkhau)
+{
+    $sql = "SELECT * FROM khachhang WHERE tai_khoan = '" . $taikhoan . "' AND mat_khau = '" . $matkhau . "'";
     $account = pdo_query_one($sql);
     return $account;
 }
-function updateProfile() {
+function updateProfile()
+{
     if (isset($_POST['capnhatthongtin']) && $_POST['capnhatthongtin']) {
         $hoten = $_POST['hoten'];
         $taikhoan = $_POST['taikhoan'];
