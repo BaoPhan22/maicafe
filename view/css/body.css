@@ -15,8 +15,8 @@ body {
 
 #banner {
     width: 100%;
-    background-image: url('./image/banner1.jpg');
-    background-size: 100% 100%;
+    background: url('/view/image/banner1.jpg');
+    background-size: cover;
     height: 600px;
     margin-top: 40px;
     display: flex;
@@ -38,6 +38,7 @@ body {
     margin-top: 90px;
     color: #F6C33E;
     line-height: 90px;
+    font-weight: 900;
 }
 
 #banner .box-left p {
@@ -58,6 +59,15 @@ body {
     font-size: 17px;
     border-radius: 20px;
     transition: 0.4s;
+}
+
+#banner .box-left button a {
+    text-decoration: none;
+    color: #fff;
+}
+
+#banner .box-left button:hover a {
+    color: #000;
 }
 
 #banner .box-left button:hover {

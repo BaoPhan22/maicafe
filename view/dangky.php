@@ -64,7 +64,7 @@
         </p>
         <em ng-if="!gioitinh>=1" class="loi">Chọn Giới tính</em>
         </div>
-        <button class="button" ng-model="button">ĐĂNG KÝ</button>
+        <input class="button" type="submit" value="ĐĂNG KÝ" ng-model="button">
         <br>
     </form>
 

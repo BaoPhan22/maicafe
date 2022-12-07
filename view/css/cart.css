@@ -1,6 +1,7 @@
-*{
+* {
   box-sizing: border-box;
 }
+
 .container {
   display: flex;
   align-items: center;
@@ -9,20 +10,22 @@
   margin: auto;
   padding-top: 170px;
   padding-bottom: 100px;
-  background: #eeeeee;
+  background: #ffffff;
 }
 
 #form1 {
   box-shadow: 10px 10px 15px 2px #ccc;
   border-bottom: 10px;
   margin: 0 20px 20px 100px;
-  padding: 10px 90px;
+  padding: 20px 90px;
   background-color: #ffffff;
+  width: 100%;
 }
 
 #form1 h1 {
   font-weight: 900;
-  color: #162F45
+  color: #162F45;
+  padding-top: 20px;
 }
 
 #form1 .txt {
@@ -90,21 +93,55 @@ input .name {
 }
 
 #sanpham {
-  display: flex;
   justify-content: space-between;
 }
 
 .itemsp {
   display: flex;
+  padding-top: 20px;
+}
+
+.itemsp .delcart {
+  background-color: rgb(213, 0, 0);
+  width: 17%;
+  height: 30px;
+  text-align: center;
+  float: right;
+  padding-top: 3px;
+  margin-bottom: 15px;
+  border-radius: 10px;
+}
+
+.itemsp .delcart:hover {
+  filter: opacity(80%);
+}
+
+.itemsp .delcart a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.itemsp .giasp {
+  text-align: right;
+  font-size: 20px;
+  color: crimson;
+  ;
 }
 
 .itemsp h5 {
-  color: #162F45
+  color: #162F45;
+  font-weight: 900;
 }
 
 .itemsp .tensp {
   color: #162F45;
   font-weight: 600;
+}
+
+.itemsp img {
+  width: 50%;
+  height: auto;
+  margin: auto
 }
 
 .spgiohang {
@@ -142,7 +179,8 @@ input .name {
 .magiamgia button {
   height: 35px;
   background-color: #162f45;
-  color: #f5f5f5
+  color: #f5f5f5;
+  margin: 15px 0px;
 }
 
 .magiamgia button:hover {
@@ -157,12 +195,66 @@ input .name {
 .tdh {
   display: flex;
   justify-content: space-between;
+  padding: 25px 0px;
 }
 
 .tdh h4 {
-  color: rgb(162, 18, 47)
+  color: rgb(0, 0, 0);
+  font-size: 20px;
+  font-weight: 600;
+  padding-right: 15px;
+}
+
+.tdh h3 {
+  color: rgb(162, 18, 47);
+  font-size: 20px;
+  font-weight: 600;
+  border-bottom: 2px solid rgb(162, 18, 47);
+  padding-bottom: 10px;
 }
 
 .giadh {
   margin-top: 20px;
+  display: flex;
+}
+
+.ttdh {
+  display: flex;
+}
+
+.del-allcart {
+  width: 40%;
+  background-color: rgb(213, 0, 0);
+  margin-right: 20px;
+  height: 40px;
+  padding-top: 7px;
+  text-align: center;
+}
+
+.del-allcart a {
+  color: #f5f5f5;
+  text-decoration: none;
+  font-weight: 900;
+}
+
+.continue-cart a {
+  color: #f5f5f5;
+  text-decoration: none;
+  font-weight: 900;
+}
+
+.continue-cart {
+  width: 60%;
+  background-color: #52562e;
+  height: 40px;
+  padding-top: 7px;
+  text-align: center;
+}
+
+.continue-cart:hover {
+  filter: opacity(80%);
+}
+
+.del-allcart:hover {
+  filter: opacity(80%);
 }

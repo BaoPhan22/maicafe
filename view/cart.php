@@ -1,4 +1,10 @@
 
+<?php
+  // session_start();  
+  if(isset($_SESSION['cart'])){
+  // echo var_dump($_SESSION['cart']);
+    
+?>
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.9/angular.min.js"></script>
     <link rel="stylesheet" href="css/cart.css" />
   <body ng-app="b4" ng-controller="ctr1">
@@ -41,10 +47,10 @@
             required
             minlength="2"
             maxlength="30"
-            ng-model="hoten"
-            name="hoten"
+            ng-model="diachi"
+            name="diachi"
             type="text"
-            id="hoten"
+            id="diachi"
             class="txt"
           />
           <em ng-if="form1.hoten.$invalid" class="loi">NHẬP DỊA CHỈ </em>
@@ -54,11 +60,11 @@
           <input
             required
             minlength="2"
-            maxlength="30"
-            ng-model="hoten"
-            name="hoten"
-            type="text"
-            id="hoten"
+            maxlength="11"
+            ng-model="phone"
+            name="phone"
+            type="tel"
+            id="phone"
             class="txt"
           />
           <em ng-if="form1.hoten.$invalid" class="loi">NHẬP SỐ ĐIỆN THOẠI </em>
@@ -66,10 +72,10 @@
         <p class="border-bottom">
           <label for="">GHI CHÚ</label><br /><br>
           <input
-            ng-model="email"
-            type="email"
-            name="email"
-            id="email"
+            ng-model="ghichu"
+            type="text"
+            name="ghichu"
+            id="ghichu"
             class="txt"
           />
           <em ng-if="form1.email.$invalid " class="loi">Nhập đúng gmail</em>
@@ -102,60 +108,38 @@
       </form>
       <div>
         <form name="form1" action="" id="form1">
-          <div class="sanpham border-bottom" id="sanpham">
-            <div class="itemsp">
-              <div>
-                <img class="spgiohang" src="./img/spcafe.jpg" alt="" />
-              </div>
-              <div>
-                <h5>Timor laclo x1</h5>
-                <p class="giasp">250g</p>
-                <p class="tensp">Whole Beans</p>
-              </div>
-            </div>
-            <div class="itemgia">
-              <p>$19.50</p>
-            </div>
-          </div>
-
-          <div class="sanpham border-bottom" id="sanpham">
-            <div class="itemsp">
-              <div>
-                <img class="spgiohang" src="./img/spcafe.jpg" alt="" />
-              </div>
-              <div>
-                <h5>Timor laclo x1</h5>
-                <p class="giasp">250g</p>
-                <p class="tensp">Whole Beans</p>
-              </div>
-            </div>
-            <div class="itemgia">
-              <p>$19.50</p>
-            </div>
-          </div>
+          <?php
+            $tong=0;
+            $i=0;    
+            foreach($_SESSION['cart'] as $sp){
+                $ttien=$sp[3]*$sp[4];
+                $tong+=$ttien;
+                echo'<div class="sanpham border-bottom">
+                <div class="itemsp">
+                  <input type="hidden" name="id" value="'.($i+1).'">
+                    <img class="spgiohang" src="../uploads/hanghoa/'.$sp[2].'" alt="" />
+                  <div>
+                    <h5>'.$sp[1].' x'.$sp[4].'  </h5>
+                    <p>250g</p>
+                    <p class="giasp">'.$ttien.' VNĐ</p>
+                    <div class="delcart"><a href="delcart.php?id='.$i.'"><i class="fa-solid fa-square-xmark"></i></a></div>
+                  </div>
+                </div>
+              </div>';
+              $i++;
+            }
+          ?>
           <div class="magiamgia">
             <h4>Mã giảm giá</h4>
             <input type="text" class="name" placeholder="Nhập mã" />
             <button class="apma">Áp mã</button>
-          </div>
+        </div> 
           <div class="tdh">
-            <div>
-              <h4>Tổng đơn hàng</h4>
-            </div>
-            <div class="giadh">$15.95</div>
+              <h4>Tổng đơn hàng:</h4><h3><?= $tong ?> VNĐ</h3>
           </div>
-
-          <div class="tdh">
-            <div>
-              <h4>Tổng đơn hàng</h4>
-            </div>
-            <div class="giadh">$15.95</div>
-          </div>
-          <div class="tdh">
-            <div>
-              <h4>Tổng đơn hàng</h4>
-            </div>
-            <div class="giadh">$15.95</div>
+          <div class="ttdh">
+            <div class="del-allcart"><a href="delcart.php">Xoá giỏ hàng</a></div>
+            <div class="continue-cart"><a  href="index.php?act=product">Tiếp tục đặt hàng</a></div>
           </div>
         </form>
       </div>
@@ -166,3 +150,9 @@
   app.controller("ctr1", xuly);
   function xuly($scope) {}
 </script>
+<?php
+    }else{
+      echo'<br>Giỏ hàng rỗng';
+      header('location:index.php?act=product');
+    }
+?>

@@ -4,6 +4,7 @@ if (is_array($sp)) {
     extract($sp);
 }
 ?>
+<form action="addtocart.php" method="post">
 <div id="product-details">
     <div id="product-details-top">
     </div>
@@ -16,6 +17,7 @@ if (is_array($sp)) {
             ?>
         </div>
         <div id="product-details-right">
+            <div><a class="continue-cart" href="index.php?act=product"><i class="fa-solid fa-arrow-left"></i></a></div><br>
             <h3>CÀ PHÊ</h3>
             <h1><?= $ten_san_pham ?></h1>
             <h4>Giá: <?= $don_gia ?>VNĐ</h4>
@@ -27,8 +29,13 @@ if (is_array($sp)) {
             <div class="form-group">
                 <input type="number" class="form-control" placeholder="Số lượng" min="0" name="sltk" value='1'>
             </div>
-            <button class="addhang" name="themhang">Thêm vào giỏ hàng</button>
+            <input type="hidden" name="hinh_anh" value="<img src=../uploads/hanghoa/<?= $hinh_anh ?>">
+            <input type="hidden" name="ten_san_pham" value="<?= $ten_san_pham ?>">
+            <input type="hidden" name="don_gia" value="<?= $don_gia ?> ">
+            <input type="hidden" name="id" value=" <?= $id?>" >
+            <input type ="submit" class="addhang" name="themhang" value="Thêm vào giỏ hàng">
         </div>
     </div>
 </div>
+</form>
 <script src="script.js"></script>

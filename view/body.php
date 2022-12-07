@@ -11,7 +11,7 @@
                     <span>NGUYÊN CHẤT</span>
                 </h2>
                 <p>VÌ CHÚNG TÔI HIỂU BẠN</p>
-                <button>Mua ngay</button>
+                <button><a href="index.php?act=product">Mua ngay</a></button>
             </div>
             <div class="to-bottom">
                 <a href="">
