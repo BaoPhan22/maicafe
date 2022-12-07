@@ -47,10 +47,10 @@
             required
             minlength="2"
             maxlength="30"
-            ng-model="hoten"
-            name="hoten"
+            ng-model="diachi"
+            name="diachi"
             type="text"
-            id="hoten"
+            id="diachi"
             class="txt"
           />
           <em ng-if="form1.hoten.$invalid" class="loi">NHẬP DỊA CHỈ </em>
@@ -60,11 +60,11 @@
           <input
             required
             minlength="2"
-            maxlength="30"
-            ng-model="hoten"
-            name="hoten"
-            type="text"
-            id="hoten"
+            maxlength="11"
+            ng-model="phone"
+            name="phone"
+            type="tel"
+            id="phone"
             class="txt"
           />
           <em ng-if="form1.hoten.$invalid" class="loi">NHẬP SỐ ĐIỆN THOẠI </em>
@@ -72,10 +72,10 @@
         <p class="border-bottom">
           <label for="">GHI CHÚ</label><br /><br>
           <input
-            ng-model="email"
-            type="email"
-            name="email"
-            id="email"
+            ng-model="ghichu"
+            type="text"
+            name="ghichu"
+            id="ghichu"
             class="txt"
           />
           <em ng-if="form1.email.$invalid " class="loi">Nhập đúng gmail</em>
@@ -112,17 +112,17 @@
             $tong=0;
             $i=0;    
             foreach($_SESSION['cart'] as $sp){
-                $ttien=$sp[3];
+                $ttien=$sp[3]*$sp[4];
                 $tong+=$ttien;
-                echo'<div class="sanpham border-bottom" id="sanpham">
+                echo'<div class="sanpham border-bottom">
                 <div class="itemsp">
                   <input type="hidden" name="id" value="'.($i+1).'">
-                    <img class="spgiohang" src="'.$sp[2].'" alt="" />
+                    <img class="spgiohang" src="../uploads/hanghoa/'.$sp[2].'" alt="" />
                   <div>
-                    <h5>'.$sp[1].' x1 </h5>
+                    <h5>'.$sp[1].' x'.$sp[4].'  </h5>
                     <p>250g</p>
-                    <p class="giasp">'.$sp[3].' VNĐ</p>
-                    <div class="delcart"><a href="delcart.php?id='.$i.'">Xóa</a></div>
+                    <p class="giasp">'.$ttien.' VNĐ</p>
+                    <div class="delcart"><a href="delcart.php?id='.$i.'"><i class="fa-solid fa-square-xmark"></i></a></div>
                   </div>
                 </div>
               </div>';

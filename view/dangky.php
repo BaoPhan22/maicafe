@@ -50,7 +50,7 @@
         </fieldset> -->
         <div name="baoloi" id="baoloi">
         </div>
-        <button class="button" ng-model="button">ĐĂNG KÝ</button>
+        <input class="button" type="submit" value="ĐĂNG KÝ" ng-model="button">
         <br>
     </form>
 

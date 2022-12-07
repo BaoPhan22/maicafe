@@ -17,6 +17,7 @@ if (is_array($sp)) {
             ?>
         </div>
         <div id="product-details-right">
+            <div><a class="continue-cart" href="index.php?act=product"><i class="fa-solid fa-arrow-left"></i></a></div><br>
             <h3>CÀ PHÊ</h3>
             <h1><?= $ten_san_pham ?></h1>
             <h4>Giá: <?= $don_gia ?>VNĐ</h4>

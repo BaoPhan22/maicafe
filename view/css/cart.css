@@ -103,12 +103,13 @@ input .name {
 
 .itemsp .delcart {
   background-color: rgb(213, 0, 0);
-  width: 100%;
+  width: 17%;
   height: 30px;
   text-align: center;
   float: right;
   padding-top: 3px;
   margin-bottom: 15px;
+  border-radius: 10px;
 }
 
 .itemsp .delcart:hover {
