@@ -2,8 +2,14 @@
 <?php
 if (isset($_SESSION['user'])) {
     echo '
-        <form action="index.php">
-            <input type="submit" value="Quay ve trang chu">
+        <form id="thongbao-login" action="index.php">
+            <h1>Bạn đã đăng nhập</h1>
+            <div class="back-index">
+                <input type="submit" value="Quay về trang chủ">
+            </div>
+            <div id="dangxuat">
+                <a href="index.php?act=logout">Đăng xuất</a>
+            </div>
         </form>
     ';
 } else {

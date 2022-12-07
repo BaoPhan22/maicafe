@@ -1,7 +1,15 @@
+<link rel="stylesheet" href="css/profile.css">
 <?php
 if (!isset($_SESSION['user'])) {
-    echo '<h1>Bạn chưa đăng nhập</h1>
-        <a href="index.php?act=dangnhap">Đăng nhập để tiếp tục</a>
+    echo '<div id="profile">
+            <h1>Bạn chưa đăng nhập</h1>
+            <div class="icon-back">
+            <i class="fa-sharp fa-solid fa-arrow-rotate-left"></i>
+            </div>
+            <div class="profile">
+                <a href="index.php?act=dangnhap">Đăng nhập để tiếp tục</a>
+            </div>
+        </div>
     ';
 } else {
     extract($_SESSION['user']);
@@ -32,6 +40,9 @@ if (!isset($_SESSION['user'])) {
 
 
 <?php
-    echo '<a href="index.php?act=changepassword&iduser='.$id.'">Đổi mật khẩu</a>';
-    echo '<a href="index.php?act=logout">Đăng xuất</a>';
+    echo '<div id="doimatkhau-dangxuat">
+            <div id="doimatkhau"><a href="index.php?act=changepassword&iduser='.$id.'">Đổi mật khẩu</a></div>
+            <div id="dangxuat"><a href="index.php?act=logout">Đăng xuất</a></div>
+        </div>
+    ';
 } ?>

@@ -22,7 +22,7 @@
         }
         ?>
     </select>
-    <input type="submit" value="Tìm kiếm" name="listokview" class="btn btn-outline-primary mb-3">
+    <input id="timkiem" type="submit" value="Tìm kiếm" name="listokview" class="btn btn-outline-primary mb-3">
 </form>
     <h3>TẤT CẢ SẢN PHẨM</h3>
     <ul id="list-products-new">
