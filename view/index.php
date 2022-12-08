@@ -93,13 +93,16 @@ if (isset($_GET['act']) && ($_GET['act'] != '')) {
                 // $spcl = loadSPcungloai($id, $the_loai);
                 include 'productdetail.php';
             } else {
+                // include 'body.php';
                 include 'body.php';
             }
             break;
         default:
+            // include 'body.php';
             include 'body.php';
     }
 } else {
+    // include 'body.php';
     include 'body.php';
 }
 include 'footer.php';

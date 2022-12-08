@@ -44,24 +44,5 @@
 </div>
 <!-- END FOOTER -->
 </body>
-<script type="text/javascript">
- jQuery(document).ready(function($) {
-  $(window).load(function() {
-   if ($('top').length > 0) {
-    var _top = $('top').offset().top - parseFloat($('top').css('marginTop').replace(/auto/, 0));
-    $(window).scroll(function(evt) {
-     var _y = $(this).scrollTop();
-     if (_y > _top) {
-      $('top').addClass('fixed');
-      $('.main-1').css("margin-top", "30px")
-     } else {
-      $('top').removeClass('fixed');
-      $('.main-1').css("margin-top", "0")
-     }
-    })
-   }
-  });
- });
- </script>
-
+ <script src="js/menu.js"></script>
 </html>

@@ -4,6 +4,7 @@
 
     <div id="wrapper">
         <div id="banner">
+           
             <div class="box-left">
                 <h2>
                     <span>ĐẬM VỊ</span>
@@ -15,7 +16,7 @@
             </div>
             <div class="to-bottom">
                 <a href="">
-                    <!-- <img src="image/banner.png" alt="" width="100%"> -->
+                    <img src="image/caffeine.png" alt="" width="100%">
                 </a>
             </div>
         </div>

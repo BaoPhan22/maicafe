@@ -4,6 +4,7 @@ body {
     margin: 0;
     font-family: 'Open Sans', 'sans-serif';
     display: table;
+    overflow-x: none;
 }
 
 /* chia layout */
@@ -16,10 +17,12 @@ body {
 
 .top {
     min-height: 85px;
-    background-color: #a36f2ffe;
+    background-color: rgba(255, 255, 255, 0.6);
     position: fixed;
+    border-bottom: 2px solid rgba(110, 110, 110, 0.959);
     top:0;
     transition: all 0.5s ease-in-out ;
+    z-index: 99;
 }
 
 .boxcenter {
@@ -47,22 +50,23 @@ body {
 
 #menu .item {
     margin: 0 25px;
-    padding: 10px 5px;
+    padding: 10px 10px;
 }
 
 #menu .item a {
-    color: #ffffff;
+    color:#232323;
     text-decoration: none;
     font-weight: 900;
-    font-size: 16px;
+    font-size: 17.6px;
     transition: 0.4s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
 #menu .item:hover a {
-    color: #ffffff;
+    color: #4A6586;
     font-weight: 900;
-    border-bottom: 4px solid #ffffff;
+    border-bottom: 4px solid #4A6586;;
     padding-bottom: 10px;
+    transition: 0.4s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
 #action {
@@ -78,18 +82,19 @@ body {
 }
 
 #action .item a {
-    color: #ffffff;
+    color:#232323;
     text-decoration: none;
     font-weight: 900;
-    font-size: 21px;
+    font-size: 23px;
     transition: 0.4s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
 #action .item:hover a {
-    color: #ffffff;
-    font-weight: 900;
-    border-bottom: 4px solid #ffffff;
+    color: #4A6586;
+    font-weight: 900; 
     padding-bottom: 10px;
+    transition: 0.4s cubic-bezier(0.075, 0.82, 0.165, 1);
+    /* font-size: 21px; */
 }
 
 #action .search {

@@ -1,5 +1,5 @@
 .footer {
-  background-color: rgb(37, 46, 77);
+  background-color: #131729;
   min-height: 200px;
   display:block;
   /* position: absolute;
@@ -73,7 +73,7 @@
   padding: 10px 50px;
   display: flex;
   text-align: center;
-  background-color: rgb(37, 46, 77);
+  background-color: #131729;
 }
 
 .bottom-footer {

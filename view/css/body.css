@@ -4,9 +4,11 @@
     box-sizing: border-box;
     cursor: pointer;
 }
+
 body {
     padding-top: 90px;
 }
+
 #wrapper {
     /* Kích thước màn hình là 1280 x 720 */
     width: 100%;
@@ -15,34 +17,41 @@ body {
 
 #banner {
     width: 100%;
-    background: url('/view/image/banner1.jpg');
+    background: linear-gradient(60deg, rgba(149, 108, 12, 1) 19%, rgba(195, 161, 82, 1) 45%, rgba(255, 255, 255, 1) 100%);
     background-size: cover;
-    height: 600px;
-    margin-top: 40px;
+    height: 540px;
     display: flex;
-    padding: 0 145px;
+    padding-left: 145px;
     position: relative;
+    opacity: 0.9 ;
 }
+
 .to-bottom {
-    position: absolute;
-    left: 0;
-    top: 0;
+    margin-top:18%;
+    float: right;
+    
+}
+
+.to-bottom img {
+    width: 100%;
+    margin-left: 12%;
+    /* height:70% */
 }
 
 #banner .box-left {
     width: 50%;
+    /* position: absolute; */
 }
 
 #banner .box-left h2 {
     font-size: 60px;
     margin-top: 90px;
-    color: #F6C33E;
+    color: #fdfdfd;
     line-height: 90px;
-    font-weight: 900;
+    font-weight: 1000;
 }
-
 #banner .box-left p {
-    color: #d0d0d0;
+    color: #e1e1e1;
     margin-top: 20px;
     letter-spacing: 4px;
 }
@@ -51,7 +60,7 @@ body {
     width: 190px;
     height: 45px;
     margin-top: 35px;
-    background-color: #162F45;
+    background-color: #131729;
     border: none;
     outline: none;
     color: #fff;
@@ -357,3 +366,6 @@ body {
     background-color: #575252;
     border-radius: 0 0 10px 10px;
 }
+
+
+/*  */
