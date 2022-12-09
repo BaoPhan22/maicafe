@@ -1,4 +1,20 @@
 <?php
+    // function updatesoluong($vitri){
+    //     for($i=0;$i< sizeof($_SESSION['cart']);$i++){
+    //         if($i==$vitri){
+    //             $_SESSION['cart'][$i]['4']+=1;
+    //         }
+    //     }
+    // }
+    // function checksp($id){
+    //     $vitri=-1;
+    //     for ($i=0;$i< sizeof($_SESSION['cart']);$i++){
+    //         if($_SESSION['cart'][$i][0]==$id){
+    //             $vitri=$i;
+    //         }
+    //     }
+    //     return $vitri;
+    // }
 function addOneProduct()
 {
     if (isset($_POST['themmoisanpham']) && $_POST['themmoisanpham']) {
