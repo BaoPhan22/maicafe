@@ -1,5 +1,19 @@
 
+<link rel="stylesheet" href="css/profile.css">
+
 <?php
+  if (!isset($_SESSION['user'])) {
+    echo '<div id="profile">
+            <h1>Bạn chưa đăng nhập<i class="fa-solid fa-cart-shopping"></i></h1>
+            <div class="icon-back">
+            <i class="fa-sharp fa-solid fa-arrow-rotate-left"></i>
+            </div>
+            <div class="profile">
+                <a href="index.php?act=dangnhap">Đăng nhập để tiếp tục</a>
+            </div>
+        </div>
+    ';
+}else{
   // session_start();  
   if(isset($_SESSION['cart'])){
   // echo var_dump($_SESSION['cart']);s
@@ -155,4 +169,5 @@
       echo'<h1>Giỏ hàng rỗng</h1>';
       header('location:index.php?act=product');
     }
+}
 ?>

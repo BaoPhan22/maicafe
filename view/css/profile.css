@@ -20,6 +20,13 @@ body {
     background-color: #ffffff;
 }
 
+i{
+    width: 50%;
+    text-align: center;
+    margin: 0 auto;
+    
+}
+
 #profile h1 {
     text-align: center;
     padding-top: 80px;

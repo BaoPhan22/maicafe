@@ -1,4 +1,5 @@
 <link rel="stylesheet" href="css/dangky.css">
+<link rel="stylesheet" href="css/dangnhap.css">
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.9/angular.min.js"> </script>
 <?php
 if (!isset($_SESSION['user'])) {
@@ -62,9 +63,16 @@ if (!isset($_SESSION['user'])) {
 <?php
 } else {
 ?>
-<form action="index.php">
-    <input type="submit" value="Quay ve trang chu">
-</form>
+<form id="thongbao-login" action="index.php">
+            <h1 class="h1">Bạn đã đăng nhập</h1>
+            <h5>Đăng xuất để có thể đăng ký</h5>
+            <div class="back-index">
+                <input type="submit" value="Quay về trang chủ">
+            </div>
+            <div id="dangxuat">
+                <a href="index.php?act=logout">Đăng xuất</a>
+            </div>
+        </form>
 <?php
 }
 ?>

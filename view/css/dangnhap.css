@@ -109,11 +109,16 @@ a:hover {
   background-color: #ffffff;
 }
 
-#thongbao-login h1 {
+#thongbao-login .h11 {
   text-align: center;
   padding-top: 60px;
   padding-bottom: 80px;
 }
+#thongbao-login .h1 {
+  text-align: center;
+  padding-top: 60px;
+}
+#thongbao-login h5{text-align: center;padding-bottom: 80px;}
 
 #thongbao-login .back-index {
   margin: auto;

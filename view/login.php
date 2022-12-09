@@ -3,7 +3,7 @@
 if (isset($_SESSION['user'])) {
     echo '
         <form id="thongbao-login" action="index.php">
-            <h1>Bạn đã đăng nhập</h1>
+            <h1 class="h11">Bạn đã đăng nhập</h1>
             <div class="back-index">
                 <input type="submit" value="Quay về trang chủ">
             </div>

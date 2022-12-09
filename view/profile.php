@@ -2,7 +2,7 @@
 <?php
 if (!isset($_SESSION['user'])) {
     echo '<div id="profile">
-            <h1>Bạn chưa đăng nhập</h1>
+            <h1>Bạn chưa đăng nhập<i class="fa-solid fa-user"></i></h1>
             <div class="icon-back">
             <i class="fa-sharp fa-solid fa-arrow-rotate-left"></i>
             </div>
