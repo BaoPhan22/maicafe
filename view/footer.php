@@ -13,10 +13,10 @@
             <div class="top-footer2">
                 <h1>LIÊN KẾT</h1>
                 <div class="footer-lienket">
-                    <a href="">Trang chủ</a>
-                    <a href="">Giới thiệu</a>
-                    <a href="">Sản phẩm</a>
-                    <a href="">Liên hệ</a>
+                    <a href="index.php">Trang chủ</a>
+                    <a href="index.php?act=about">Giới thiệu</a>
+                    <a href="index.php?act=product">Sản phẩm</a>
+                    <a href="index.php?act=about">Liên hệ</a>
                 </div>
             </div>
             <div class="top-footer3">

@@ -33,19 +33,21 @@
         // header('location: index.php?act=cart');
     }
     function updatesoluong($vitri){
-        for($i=0;$i< sizeof($_SESSION['cart']);$i++){
+        for($i=0; $i < sizeof($_SESSION['cart']); $i++){
             if($i==$vitri){
-                $_SESSION['cart'][$i]['4']+=1+$_POST['sltk']-1;;
+                $_SESSION['cart'][$i]['4']+=1+($_POST['sltk']-1);
             }
         }
     }
+
     function checksp($id){
         $vitri=-1;
-        for ($i=0;$i<sizeof($_SESSION['cart']) ;$i++){
-            if($_SESSION['cart'][$i][0]==$id){
+        for ($i=0; $i < sizeof($_SESSION) ; $i++){
+            if($_SESSION['cart'][$i][0] == $id){
                 $vitri=$i;
             }
         }
         return $vitri;
     }
+
 ?>
